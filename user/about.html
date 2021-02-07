@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piyshef</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!-- <link rel="stylesheet/scss" type="text/css" href="css/menu.scss">
+    <link rel="stylesheet/scss" type="text/css" href="css/case-studies.scss"> -->
+  <link rel="stylesheet" href="css/media-query.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <!-- Production version -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <style>
+    .floating1 {
+      animation-name: floating;
+      animation-duration: 3.1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      margin-left: 30px;
+    }
+
+    .floating2 {
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      margin-left: 30px;
+    }
+
+
+    @keyframes floating {
+      from {
+        transform: translate(0, 0px);
+      }
+
+      65% {
+        transform: translate(0, 15px);
+      }
+
+      to {
+        transform: translate(0, -0px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--------------------------------------------------- Header Start Here ---------------------------------------------------->
+  <!-- Desktop Start -->
+  <div style="background-color: #fff;">
+    <div class="col-lg-11 col-md-11 col-12 mx-auto pt-lg-5 header-padding">
+      <ul class="nav">
+        <li class="nav-item">
+          <div style="width: 100%!important;">
+            <div class="video" onclick="goToHomePage()">
+              <video autoplay preload="auto" id="logo__video" class="logo__video">
+                <source src="assets/videos/logoanimation.mp4" type="video/mp4">
+                <source src="assets/videos/logoanimation.webm" type="video/webm">
+              </video>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item mr-4 header-menu">
+          <a class="nav-link d-none d-md-block d-lg-block" style="color: #0855A0;font-size: xx-large;">
+            Menu
+          </a>
+        </li>
+        <div class="overlay-navigation">
+          <nav role="navigation">
+            <ul>
+              <li><a href="index.html" data-content="The beginning">Home</a></li>
+              <li><a href="allcase-studies.html" data-content="I got game">Case Studies</a></li>
+              <li><a href="alljournals.html" data-content="Only the finest">Journals</a></li>
+              <li><a href="about.html" data-content="Curious?">About</a></li>
+              <li><a href="contact.html" data-content="Don't hesitate">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link open-overlay humburg" href="#">
+            <span style="background-color: #000!important;width: 30px;" class="bar-top"></span>
+            <span style="background-color: #000!important;width: 30px;" class="bar-middle"></span>
+            <span style="background-color: #000!important;width: 30px;" class="bar-bottom"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Desktop End -->
+
+  <!--------------------------------------------------- Header End Here ---------------------------------------------------->
+  <br><br><br>
+  <!--------------------------------------------------- About Us Start ------------------------------------------------------>
+
+  <div class="container">
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-lg-12 col-md-12 col-12 mx-auto text-center">
+        <div class="col-md-6 text-center mb-5 mx-auto ml-5">
+          <h1 class="font-pt-serif-400 bottom-container">About Us</h1>
+          <h1 class="font-pt-serif-400 top-container">About Us</h1>
+        </div>
+        <!-- <h3 class="font-pt-serif-400">Who We Are</h3> -->
+        <p class="font-pt-serif-400" style="margin-top:-90px">We are Piyshef, a company that loves to Collaborate,
+          create and execute.</p>
+        <div class="col-md-12 mx-auto">
+          <p class="text-muted font-pt-serif-400" style="line-height: 28px;">Piyshef is an all-in-one platform for small
+            businesses to
+            flourish. We empower individuals to grow their businesses through our multidimensional approach.
+            How, you may ask? You tell us your story. Our team of highly-skilled professionals will not just
+            brand your product/service- it will create an experience for your users, making you the best out
+            there. We believe in less talk and more action. Let's get to it, shall we?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------- About Us End ------------------------------------------------------>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" style="margin-top: 20px;">
+        <a href="#services">
+          <img src="assets/svg/arrow-down.svg" class="floating1" width="5%" alt=""><br>
+          <!-- <img src="assets/svg/down-arrow.svg" class="floating2" width="10%" style="margin-top: -80px;" alt=""> -->
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------- Services Us Start ------------------------------------------------------>
+  <div class="container" id="services">
+    <div class="row" style="margin-top: 400px;">
+      <div class="col-lg-12 col-md-12 col-12 mx-auto text-center">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <h1 class="font-pt-serif-400 bottom-container">Services</h1>
+            <h1 class="font-pt-serif-400 top-container">Services</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">1.</p>
+              <h1 class="about-heading heading" id="a">Multidimensional Branding</h1>
+              <!-- <h1 class="heading" id="b">1. Multidimensional Branding</h1> -->
+            </div>
+            <!-- <p class="heading" id="a">hover with letter-spacing = 1px transition</p>
+            <p class="heading" id="b">hover with letter-spacing = 1em transition</p> -->
+            <p>We take your storyline, your work and create a digital presence for your brand. Why
+              multidimensional? We give you a 360° view into the digital world, increasing your visibility
+              through a multidimensional approach.</p>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">2.</p>
+              <h1 class="about-heading heading" id="a">Paid Marketing</h1>
+              <p>Companies spend millions on marketing, but don't succeed in marking their presence. We'll
+                help you boost your presence through simple tools that you will find effective and
+                efficient.</p>
+            </div>
+          </div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">3.</p>
+              <h1 class="about-heading heading" id="b">Website and App Development</h1>
+              <p>Your website/app is the face of your brand. Just think of us as your new stylist! We can
+                create simple, minimalistic, funky, bright and vibrant website and app interfaces making
+                your user's experience 1000x times better.</p>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">4.</p>
+              <h1 class="about-heading heading" id="a">SEO</h1>
+              <p>Yes, the treat for search engine crawlers. These engines are getting smart every day, which
+                means your website has to become smart too. We'll increase your rankings and optimize your
+                website.</p>
+            </div>
+          </div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">5.</p>
+              <h1 class="about-heading heading" id="a">Social Media </h1>
+              <p>With 2.5 billion users of social media platforms in the world, you know how dynamic and
+                competitive this space is. Let us ease it out for you and help you #influence with your
+                brand!</p>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">6.</p>
+              <h1 class="about-heading heading" id="a">Content Writing </h1>
+              <p>Your brand is your story. Let's craft it together and create content which will provide an
+                experience to your users like never before. </p>
+            </div>
+          </div>
+          <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
+            <div style="position: relative;">
+              <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">7.</p>
+            <h1 class="about-heading heading" id="a">Online Consultancy </h1>
+            <p>We're here to guide you, be your armor in the competitive digital place. Consider us your
+              North Star and we'll equip you enough to create a change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--------------------------------------------------- Services Us End ------------------------------------------------------>
+
+
+
+
+
+  <!--------------------------------------------------- Footer Start Here ------------------------------------------------------->
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 mx-auto">
+            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+              <h3 class="f-title t_color">Get in Touch</h3>
+              <p>Don’t miss any updates of our new templates and extensions.!</p>
+              <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe"
+                placeholder="Email">
+              <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()"
+                type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 111;">
+            <div id="footer-rocket2"></div>
+          </div>
+          <div class="col-lg-2 col-md-2 mx-auto float-right">
+            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+              style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+              <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
+              <div class="f_social_icon float-right">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row" style="margin-top: -350px;width: 100%;">
+        <div class="col-md-3"></div>
+        <div class="col-md-3 ml-3 footer_blue_cloud floating1">
+          <img src="assets/images/cloudblue.png" class="w-100" alt="">
+        </div>
+        <div class="col-md-4 footer_green_cloud ml-5 floating2">
+          <img src="assets/images/cloudgreen.png" class="w-100" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-7">
+            <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
+          </div>
+          <div class="col-lg-6 col-sm-5 text-right">
+            <p>Made By<i class="icon_heart"></i> <a href="http://thepresence.in/" style="color: #0855A0;"
+                target="_blank">Thepresence</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-------------------------------------------------- Footer End Here -------------------------------------------------------->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/menu2.js"></script>
+  <script type="text/javascript" src="js/owl.js"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $('.noloop video').removeAttr('loop');
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/subscribe.js"></script>
+  <script src="js/lottie.js"></script>
+  <script src="js/lottie-images.js"></script>
+  <script>
+    jQuery($ => {
+      // The speed of the scroll in milliseconds
+      const speed = 3000;
+
+      $('a[href*="#"]')
+        .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
+        .unbind('click.smoothScroll')
+        .bind('click.smoothScroll', event => {
+          const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: $(targetElement).offset().top
+            }, speed);
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+.home {
+    color: #39B550;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.menu {
+    color: #0855A0;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: -50px!important;
+}
+
+#video {
+    margin-top: 500px;
+    width: 100%!important;
+    background-attachment: fixed!important;
+    object-fit: cover;
+}   
+
+#video2{
+    margin:0 auto;
+    min-width: 100%;
+    min-height: 350px;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.case-studies-background {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.formula-heading {
+    color: #fff;
+    font-size: 50px;
+}
+
+/* .wave{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+} */
+
+/* .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../assets/images/wave.png);
+    background-size: cover;
+} */
+
+.wave.wave1 {
+    animation: animate2 15s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 40%;
+    width: 100%;
+}
+/* 
+.wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 43%;
+    width: 100%;
+}
+
+.wave.wave3 {
+    animation: animate3 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 41%;
+    width: 100%;
+}
+
+.wave.wave4 {
+    animation: animate3 10s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -8s;
+    bottom: 44%;
+    width: 100%;
+} */
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.case-study-cloumn{
+    /* background: #fff; */
+    width: 300px;
+    height: 500px
+}
+
+.work{
+    font-size: 50px;
+}
+
+.ParallaxVideo{ 
+	height: 170px;
+	/* padding-bottom: 50px; */
+    padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+    min-width: 100%;
+    position: fixed;
+	top:0;
+	z-index: -9999;
+}
+.ParallaxVideo h3 {
+    color: #212529;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+input::placeholder{
+    font-family: 'Lato'!important;
+  }
+
+  .about-heading {
+    transition: color .35s ease;
+    cursor: pointer;
+  }
+
+  .about-heading:hover {
+    transition: color 1s ease;
+    cursor: pointer;
+    color: #57de91;
+  }
+
+  #footer-rocket,#footer-rocket2 {
+      width: 100%;
+  }
+
+  /* .rocket {
+    animation: upword 3s infinite;
+    animation-direction: alternate;
+  } */
+
+  .footer_blue_cloud {
+    /* animation: move1 8s infinite;
+    animation-direction: alternate; */
+    margin-top: -100px;
+  }
+
+  .footer_green_cloud {
+    /* animation: move2 8s infinite;
+    animation-direction: alternate; */
+    /* width: 60%; */
+  }
+
+  @keyframes upword {
+    from {top: 400px}
+    to {top: 0;}
+  }
+
+  @keyframes move1 {
+    from {left: 100%;}
+    to {left: 0;}
+  }
+
+  @keyframes move2 {
+    from {right: 100%;}
+    to {right: 0px;}
+  }
+
+  .floating1 {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+ }
+
+ .floating2 {  
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+ }
+
+  @keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(15px, 0px); }
+    to   { transform: translate(-0px, 0); }    
+  }
+
+/* .about-heading:hover::after {
+    content: url(/assets/images/right-arrow.png);
+    vertical-align: middle;
+    margin: 10px 0 0 20px;
+} */
+
+.text-muted {
+    font-size: 20px!important;
+}

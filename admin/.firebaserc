@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "piyshef": {
+      "hosting": {
+        "piyshef": [
+          "piyshef"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "admin-pyshef"
+  }
+}

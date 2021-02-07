@@ -1,0 +1,33 @@
+<main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">{{id ? "Update" : "Add"}} Journal</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 card mx-auto p-3">
+            <form *ngIf="data" #dataForm="ngForm" autocomplete="off" (submit)="submit(dataForm)">
+                <div class="form-group">
+                    <label for="itemImg">Cover Image</label>
+                    <input type="file" class="form-control" id="itemImg" name="itemImg" #itemImg="ngModel" ngModel
+                        (change)="imageProcessing($event)">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="form-control" name="title" #title="ngModel" [(ngModel)]="data.title" required>
+                </div>
+                <div class="form-group">
+                    <label for="authorName">Author Name</label>
+                    <input type="text" id="authorName" class="form-control" name="authorName" #authorName="ngModel" [(ngModel)]="data.authorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="priority">priority</label>
+                    <input type="number" id="priority" class="form-control" name="priority" #priority="ngModel" [(ngModel)]="data.priority" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <ckeditor [ngModel]="data.content" name="content"></ckeditor>
+                </div>
+                <button type="submit" [disabled]="dataForm.invalid" class="btn btn-info rounded-0 px-5">Submit</button>
+            </form>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,22 @@
+<main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">All Case Studies</h1>
+      <button class="btn btn-info rounded-0 px-5" routerLink="/admin/case-studies/single">Add</button>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-4 mt-3">
+        <div class="col p-2" *ngFor="let single of allCaseStudies; let i = index">
+            <div class="card rounded-0 shadow-sm">
+                <img [src]="single.imgUrl" class="card-img-top" height="150px">
+                <div class="card-body p-2">
+                    <h6 class="">{{single.heading}}</h6>
+                    <h6 class="text-muted">{{single.subHeading}}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">No. {{single.priority}} Priority</h6>
+                    <button type="button" (click)="update(single.id)" class="card-link btn btn-link m-0 p-0 pr-3">
+                        Edit
+                    </button>
+                    <button (click)="delete(single.id)" class="card-link btn btn-link m-0 p-0">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

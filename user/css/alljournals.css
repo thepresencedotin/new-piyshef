@@ -1,0 +1,232 @@
+/* .journal-card {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../assets/images/case-study1.jfif);
+  background-size: cover;
+  padding: 0;
+  width: 100%;
+  height: 280px;
+  transition: 1s;
+}
+
+.journal-card:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.5s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, #0855A0 100%);
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+img:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.journal-card:hover:before {
+  height: 100%;
+}
+
+.journal-card-text {
+  position: absolute;
+  bottom: 0;
+  z-index: 111;
+  color: #fff;
+}
+
+.journal-card-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 111;
+  color: #fff;
+}
+
+.author {
+  color: #888;
+}
+
+@media only screen and (max-width:764px) {
+  .journal-title {
+    font-size: 35px!important;
+    letter-spacing: -.01em;
+    line-height: 1.0667;
+    background-color: #fff!important;
+    color: #000!important;
+    box-shadow: none!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }  
+}
+
+.journal-title {
+  font-size: 3.75rem;
+  letter-spacing: -.01em;
+  line-height: 1.0667;
+  background-color: #fff!important;
+  color: #000!important;
+  box-shadow: none!important;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+.journal_meta-author {
+  color: #0252A5;
+}
+
+.footer-border {
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #333;
+  color: #232323;
+} */
+
+.grid {
+	position: relative;
+	margin: 1.5rem;
+	padding: 1em 0 4em;
+	min-width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 2%;
+	/* min-width: 580px;
+	max-width: 580px; */
+	width: 46%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(2,82,165,0) 0%, rgba(2,82,165,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(2,82,165,0) 0%, rgba(85, 98, 161, 0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #484c61;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+.journal__img {
+  /* min-height:350px!important;
+  max-height:350px!important; */
+  min-width:100%;
+}

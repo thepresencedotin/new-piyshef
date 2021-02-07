@@ -1,0 +1,14 @@
+<app-header></app-header>
+<main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Tag Line</h1>
+    </div>
+
+    <div class="row mt-5 p-3">
+        <div class="col-md-6 mx-auto text-center card p-3">
+            <textarea rows="4" type="text" class="form-control" [(ngModel)]="tagLine" placeholder="Write Your Tag Line Here..."></textarea> <br>
+            <button class="btn btn-primary" (click)="update()">{{tagLine ? 'Update' : 'Save'}}</button>
+        </div>
+    </div>
+
+</main>
