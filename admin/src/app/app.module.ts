@@ -25,8 +25,8 @@ import { SingleJournalComponent } from './admin/journals/single-journal/single-j
 import { AllJournalComponent } from './admin/journals/all-journal/all-journal.component';
 import { ContactComponent } from './admin/contact/contact.component';
 import { HeadingComponent } from './admin/heading/heading.component';
-import { CKEditorModule } from 'ckeditor4-angular';
 import { AssestComponent } from './admin/assest/assest.component';
+import { CKEditorModule } from 'ng2-ckeditor';
 
 @NgModule({
   declarations: [

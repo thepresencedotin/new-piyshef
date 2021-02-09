@@ -61,13 +61,13 @@ function showDataInHTML() {
             $('.slideshow-text').slick('slickGoTo', nextSlide);
         }
     }).on("mousewheel", function (event) {
-        event.preventDefault();
-        event.preventDefault();
-        if (event.originalEvent.deltaX > 0 || event.originalEvent.deltaY < 0) {
-            $(this).slick('slickNext');
-        } else if (event.originalEvent.deltaX < 0 || event.originalEvent.deltaY > 0) {
-            $(this).slick('slickPrev');
-        };
+        // event.preventDefault();
+        // event.preventDefault();
+        // if (event.originalEvent.deltaX > 0 || event.originalEvent.deltaY < 0) {
+        //     $(this).slick('slickNext');
+        // } else if (event.originalEvent.deltaX < 0 || event.originalEvent.deltaY > 0) {
+        //     $(this).slick('slickPrev');
+        // };
     }).on('mousedown touchstart', function () {
         dragging = true;
         tracking = $('.slick-track', $slider).css('transform');

@@ -4,7 +4,7 @@
         <h1 class="h2">{{id ? "Update" : "Add"}} Case Studies</h1>
     </div>
     <div class="row">
-        <div class="col-md-6 card mx-auto p-3">
+        <div class="col-md-10 card mx-auto p-3">
             <form *ngIf="data" #dataForm="ngForm" autocomplete="off" (submit)="submit(dataForm)">
                 <div class="form-group">
                     <label for="itemImg">Cover Image</label>
@@ -33,6 +33,7 @@
                 </div>
                 <div class="form-group">
                     <label for="content">Content</label>
+                    <!-- <ckeditor [(ngModel)]="ckeditorContent"></ckeditor> -->
                     <ckeditor name="content" [(ngModel)]="data.content"></ckeditor>
                 </div>
 
@@ -71,7 +72,8 @@
                 <div class="card border-0 bg-transparent rounded-0">
                     <img src="{{image.imgUrl}}" height="200px" class="card-img rounded-0"
                         onError="this.src='https://cdn.dribbble.com/users/696649/screenshots/4904230/lp-loader_1.gif'">
-                    <button type="button" class="btn btn-info rounded-0 btn-sm my-2" (click)="copyLink(image.imgUrl)">Copy Link</button>
+                    <button type="button" class="btn btn-info rounded-0 btn-sm my-2"
+                        (click)="copyLink(image.imgUrl)">Copy Link</button>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CaseStudiesService } from 'src/app/services/case-studies.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonService } from 'src/app/services/common.service';
@@ -19,6 +19,7 @@ export class SingleCaseStudiesComponent implements OnInit {
   myForm
   gallery = []
   text:string
+  ckeditorContent: string = '<p>Some html</p>';
   constructor(public caseService: CaseStudiesService, public route: ActivatedRoute, public common: CommonService,public router:Router,public assets:AssetsService) { }
 
   ngOnInit(): void {
