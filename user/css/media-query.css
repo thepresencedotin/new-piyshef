@@ -163,7 +163,8 @@
         font-size: xx-large;
         color: #0855A0!important;
         cursor: pointer;
-        margin-right: 70px!important
+        margin-right: 70px!important;
+        z-index:111111!important;
     }
     #video {
         margin-top: -150px;

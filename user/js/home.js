@@ -13,15 +13,16 @@ function showCaseStudies() {
             </div>
             `
             document.getElementById("text-part").innerHTML += `
-                <div class="item">${element.data().heading}</div>
+                <div class="item my-5">${element.data().heading}</div>
             `
         });
         showDataInHTML()
+
     })
 }
 
 function goSingleCaseStudiesPage(id) {
-location.replace("single-case.html?id="+id)
+    location.replace("single-case.html?id=" + id)
 }
 
 function showDataInHTML() {
@@ -43,9 +44,12 @@ function showDataInHTML() {
     $('.slideshow-left').slick({
         vertical: true,
         verticalSwiping: true,
-        arrows: false,
+        arrows: true,
         infinite: true,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover:false,
         speed: 1000,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
     }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -92,7 +96,7 @@ function showDataInHTML() {
         infinite: true,
         speed: 950,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-        initialSlide: maxItems - 1
+        initialSlide: maxItems - 1,
     });
     $('.slideshow-text').slick({
         swipe: false,
@@ -100,20 +104,20 @@ function showDataInHTML() {
         arrows: false,
         infinite: true,
         speed: 900,
-        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
     });
 }
 //===================================== Journal Start ==========================================//
 
 function showJournals() {
-firebase.firestore().collection("journals").orderBy("priority", "asc").limit(4).onSnapshot(function (snapshot) {
-    document.getElementById("scrollHorizontal").innerHTML = ""
+    firebase.firestore().collection("journals").orderBy("priority", "asc").limit(4).onSnapshot(function (snapshot) {
+        document.getElementById("scrollHorizontal").innerHTML = ""
 
-    var image = ""
-    var author = ""
-    var title = ""
-    snapshot.forEach(element => {
-        document.getElementById("scrollHorizontal").innerHTML += ` <div class="news-block">
+        var image = ""
+        var author = ""
+        var title = ""
+        snapshot.forEach(element => {
+            document.getElementById("scrollHorizontal").innerHTML += ` <div class="news-block">
         <div class="inner-box">
           <div class="image">
             <a href="alljournals.html"><img src="${element.data().imgUrl}" alt="" /></a>
@@ -129,23 +133,23 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").limit(4).
         </div>
       </div> `
 
-        image += `
+            image += `
     <a href="alljournals.html"><img src="${element.data().imgUrl}" alt="" /></a>
     `
 
-        author += `
+            author += `
         <li>${element.data().authorName}</li>
       `
-        title += `
+            title += `
       ${element.data().title}
       `
-    })
-    $('.center').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
+        })
+        $('.center').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
                 {
                     breakpoint: 768,
                     settings: {
@@ -165,12 +169,18 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").limit(4).
                     }
                 }
             ]
-    });
-})
+        });
+    })
 
 }
+        
 
 
 showJournals()
 
 //===================================== Journal End ==========================================//
+
+function grabbing() {
+    console.log("grabbing")
+    document.getElementById("grabbing").style.cursor = grabbing
+}
