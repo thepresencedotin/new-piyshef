@@ -8,7 +8,7 @@ function showCaseStudies() {
     firebase.firestore().collection("case-studies").orderBy("priority", "asc").limit(4).onSnapshot(function (snapshot) {
         snapshot.forEach(element => {
             document.getElementById("image-part").innerHTML += `
-            <div class="item">
+            <div class="item" onclick="goSingleCaseStudiesPage('${element.id}')">
                 <img src="${element.data().imgUrl}" />
             </div>
             `

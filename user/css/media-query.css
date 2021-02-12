@@ -126,6 +126,9 @@
         font-size: 25px;
         margin-top: -35px!important
     }
+    .about-service-margin {
+        margin-top: 250px; 
+    }
 }
 
 /*---------------------Laptop------------------------------*/
@@ -245,6 +248,9 @@
         font-size: 25px;
         margin-top: -35px!important
     }
+    .about-service-margin {
+        margin-top: 400px; 
+    }
 }
 
 /*---------------------ipad-------------------------------*/
@@ -361,4 +367,8 @@
         font-size: 25px;
         margin-top: -35px!important
     }
+    .about-service-margin {
+        margin-top: 400px; 
+    }
+
 }
