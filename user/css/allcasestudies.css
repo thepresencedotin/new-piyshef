@@ -313,6 +313,11 @@ figure.effect-apollo p {
 
 figure.effect-apollo h2 {
 	text-align: left;
+	font-weight: 300;
+	color: white;
+	text-shadow: 2px 2px 35px #000000;
+	word-spacing:initial;
+	text-transform: capitalize;
 }
 
 figure.effect-apollo:hover img {

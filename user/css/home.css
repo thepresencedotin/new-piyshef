@@ -1,0 +1,43 @@
+/* Mobile */
+
+@media (max-width:764px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: -150px;
+        top: 30%
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 5%!important;
+        top: 0;
+        left: -150px
+    }
+}
+
+/* Dasktop */
+
+@media (min-width: 1024px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: 0
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 22%;
+        top: 0;
+    }
+}
+
+/* Ipad */
+
+@media (min-width:765px) and (max-width:1023px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: 0
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 22%;
+        top: 0;
+    }
+}

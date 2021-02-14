@@ -3,11 +3,11 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").onSnapsho
     document.getElementById("journal").innerHTML = ""
     snapshot.forEach(element => {
         document.getElementById("journal").innerHTML += `
-            <figure class="effect-sadie" data-aos="fade-up" data-aos-duration="2000" style="max-width:45%;min-height:450px;max-height:450px;background-image:url(${element.data().imgUrl});background-size:cover;background-repeat: no-repeat;"
+            <figure class="effect-sadie" data-aos="fade-up" data-aos-duration="2000" style="max-width:45%;min-height:450px;max-height:450px;background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${element.data().imgUrl});background-size:cover;background-repeat: no-repeat;"
                 data-toggle="modal" data-target="#exampleModal" onclick="getSingleJournal('${element.id}')">
                 <figcaption>
-                <h2><span>${element.data().authorName}</span></h2>
-                <p>${element.data().title}</p>
+                <h2 class=""><span>${element.data().title}</span></h2>
+                <p>${element.data().authorName}</p>
                 </figcaption>			
                 </figure>
                 `

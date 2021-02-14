@@ -1,66 +1,66 @@
 @import 'https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800';
-.mt-10{
+.mt-10 {
     margin-top: -10px!important;
 }
 
-.mt-15{
+.mt-15 {
     margin-top: -15px!important;
 }
 
-.mt-20{
+.mt-20 {
     margin-top: -20px!important;
 }
 
-.mt-25{
+.mt-25 {
     margin-top: -25px!important;
 }
 
-.mt-30{
+.mt-30 {
     margin-top: -30px!important;
 }
 
-.mt-35{
+.mt-35 {
     margin-top: -35px!important;
 }
 
-.mt-40{
+.mt-40 {
     margin-top: -40px!important;
 }
 
-.mt-45{
+.mt-45 {
     margin-top: -45px!important;
 }
 
-.mt-50{
+.mt-50 {
     margin-top: -50px!important;
 }
 
-.mt-55{
+.mt-55 {
     margin-top: -55px!important;
 }
 
-.mt-60{
+.mt-60 {
     margin-top: -60px!important;
 }
 
-.text-primary{
-  color: #0252A5!important;
+.text-primary {
+    color: #0252A5!important;
 }
 
-.font-16{
-  font-size: 16px!important;
+.font-16 {
+    font-size: 16px!important;
 }
 
-.font-18{
-  font-size: 18px!important;
+.font-18 {
+    font-size: 18px!important;
 }
 
-.font-20{
-  font-size: 20px!important;
+.font-20 {
+    font-size: 20px!important;
 }
 
-.font-22{
-  font-size: 22px!important;
+.font-22 {
+    font-size: 22px!important;
 }
 
 .img-w-100 {
@@ -68,7 +68,7 @@
     height: 280px;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
     font-family: "Playfair Display";
     font-weight: 800;
 }
@@ -94,13 +94,17 @@ h1,h2,h3 {
 }
 
 .img-w-100 {
-  width: 100%;
+    width: 100%;
 }
 
 .img-h-350 {
-  height: 350px;
+    height: 350px;
 }
 
 .img-h-280 {
-  height: 280px;
+    height: 280px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

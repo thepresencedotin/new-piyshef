@@ -226,6 +226,7 @@
 	
 	.news-block .inner-box{
 		position:relative;
+		background: #fff;
 	}
 	
 	.news-block .inner-box .image{

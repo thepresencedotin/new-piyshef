@@ -1,3 +1,8 @@
+document.getElementById("tagLine").innerHTML = `
+<h1 class="tagLine">A <span
+        style="font-family:  'Playfair Display';font-weight: 800;">Brand</span> is a Feeling that People Want to Feel
+        For <span style="font-family:  'Playfair Display';font-weight: 800;">Themselves</span>.
+`
 firebase.firestore().collection("tagLine").onSnapshot(function (snapshot) {
     document.getElementById("tagLine").innerHTML = ""
     snapshot.forEach(element => {

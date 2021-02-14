@@ -33,3 +33,17 @@ $('.open-overlay').click(function() {
     nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
   }
 })
+
+var hidden = false
+
+function Overflow() {
+    hidden = !hidden
+    console.log(hidden)
+    if(hidden) {
+        document.getElementById("body").style.overflowY = "hidden"
+    }
+    else
+    {
+        document.getElementById("body").style.overflowY = "visible"
+    }
+}

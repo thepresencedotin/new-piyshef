@@ -12,9 +12,9 @@ function showCaseStudies() {
                 <img src="${element.data().imgUrl}" />
             </div>
             `
-            document.getElementById("text-part").innerHTML += `
-                <div class="item my-5">${element.data().heading}</div>
-            `
+            // document.getElementById("text-part").innerHTML += `
+            //     <div class="item my-5">${element.data().heading}</div>
+            // `
         });
         showDataInHTML()
 
@@ -44,7 +44,7 @@ function showDataInHTML() {
     $('.slideshow-left').slick({
         vertical: true,
         verticalSwiping: true,
-        arrows: true,
+        arrows: false,
         infinite: true,
         dots: true,
         autoplay: true,
@@ -131,6 +131,7 @@ function showJournals() {
             <a href="alljournals.html" class="read-more">Read More</a>
           </div>
         </div>
+        <br><br>
       </div> `
 
             image += `

@@ -26,12 +26,11 @@ export class AssestComponent implements OnInit {
   imageProcessing(event) {
     for (var i = 0; i < event.target.files.length; i++) {
       const file = event.target.files[i]
-      console.log(file.size / 1024)
-      if (file.size / 1024 < 200) {
+      if (file.size / 1024 < 500) {
         this.assets.add(file)
       }
       else {
-        this.common.showToast("error", "Failed", "Size should be less then 200kb")
+        this.common.showToast("error", "Failed", "Size should be less then 500kb")
       }
     }
   }

@@ -73,12 +73,12 @@ export class SingleCaseStudiesComponent implements OnInit {
     }
 
   imageProcessing(event) {
-    if (event.target.files[0].size / 1024 < 200) {
+    if (event.target.files[0].size / 1024 < 500) {
       this.selectedImg = event.target.files[0];
     }
     else {
       this.selectedImg = null
-      this.common.showToast("error", "Failed", "Size should be less then 200kb")
+      this.common.showToast("error", "Failed", "Size should be less then 500kb")
     }
   }
 

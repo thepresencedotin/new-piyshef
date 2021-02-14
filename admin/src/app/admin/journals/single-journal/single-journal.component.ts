@@ -59,12 +59,12 @@ export class SingleJournalComponent implements OnInit {
     }
 
   imageProcessing(event) {
-    if (event.target.files[0].size / 1024 < 100) {
+    if (event.target.files[0].size / 1024 < 500) {
       this.selectedImg = event.target.files[0];
     }
     else {
       this.selectedImg = null
-      this.common.showToast("error", "Failed", "Size should be less then 100kb")
+      this.common.showToast("error", "Failed", "Size should be less then 500kb")
     }
   }
 
