@@ -1,37 +1,44 @@
-var figure = $(".video").hover(hoverVideo, hideVideo);
-var aboutVid = document.getElementById("about-video");
-var aboutVideoStatus = false
 
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll < 300) {
-        document.getElementById("logo__video").play()
-    }
-})
+var player;
 
-function hoverVideo(e) {
-    $('#logo').hide()
-    $('video', this).get(0).play();
+
+function showMutedVideo() {
+    document.getElementById("mutedVideo").style.opacity = 1
+    player.pauseVideo();   
 }
 
-function hideVideo(e) {
-    $('#logo').show()
+// https://developers.google.com/youtube/iframe_api_reference
+
+// global variable for the player
+
+// this function gets called when API is ready to use
+function onYouTubePlayerAPIReady() {
+    // create the global player from the specific iframe (#video)
+    player = new YT.Player("video", {
+        events: {
+            // call this function when player is ready to use
+            onReady: onPlayerReady
+        }
+    });
 }
 
-function hoverVideo2(e) {
-    $('video', this).get(0).play();
+function onPlayerReady(event) {
+    // bind events
+    var playButton = document.getElementById("play-button");
+    console.log(playButton)
+    playButton.addEventListener("click", function () {
+        document.getElementById("mutedVideo").style.opacity = 0
+        player.playVideo();
+    });
+
+    var pauseButton = document.getElementById("pause-button");
+    pauseButton.addEventListener("click", function () {
+        player.pauseVideo();
+    });
 }
 
-function playVideo() {
-    aboutVideoStatus = !aboutVideoStatus
-    if (aboutVideoStatus) {
-        aboutVid.play()
-    }
-    else {
-        aboutVid.pause()
-    }
-}
-
-function goToHomePage() {
-    location.replace("index.html")
-} 
+// Inject YouTube API script
+var tag = document.createElement("script");
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
