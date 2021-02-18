@@ -82,9 +82,11 @@ function onPlayerReady(event) {
     });
 
     var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function () {
-        player.pauseVideo();
-    });
+    if(pauseButton) {
+        pauseButton.addEventListener("click", function () {
+            player.pauseVideo();
+        });
+    }
 }
 
 // Inject YouTube API script

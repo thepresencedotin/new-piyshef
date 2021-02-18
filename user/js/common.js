@@ -2,16 +2,12 @@ function goToHomePage() {
     window.location.href = "index.html"
 }
 
-var figure = $("logo__video").hover(hoverVideo, hideVideo);
+var vid = document.getElementById("logo__video");
 
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     //>=, not <=
     if (scroll < 300) {
-        console.log(scroll)
-        $('logo__video', this).get(0).play();
-    }
-    else {
-
+        vid.play()
     }
 });
