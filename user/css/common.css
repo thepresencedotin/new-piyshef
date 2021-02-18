@@ -1,4 +1,6 @@
 @import 'https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 .mt-10 {
     margin-top: -10px!important;
 }
@@ -68,7 +70,7 @@
     height: 280px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 ,h5 {
     font-family: "Playfair Display";
     font-weight: 800;
 }
@@ -84,13 +86,19 @@ h1, h2, h3 {
 }
 
 .font-pt-serif-400 {
-    font-family: "PT Serif"!important;
+    /* font-family: "PT Serif"!important; */
+    font-family: "Playfair Display"!important;    
     font-weight: 400!important;
 }
 
 .font-pt-serif-700 {
-    font-family: "PT Serif"!important;
+    /* font-family: "PT Serif"!important; */
+    font-family: "Playfair Display"!important;    
     font-weight: 700!important;
+}
+
+p,li{
+    font-family: 'Roboto', sans-serif!important;
 }
 
 .img-w-100 {

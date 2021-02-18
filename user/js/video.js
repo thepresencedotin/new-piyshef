@@ -1,3 +1,53 @@
+var figure = $(".video").hover( hoverVideo, hideVideo );
+// var figure2 = $(".video2").hover( hoverVideo2, hideVideo2 );
+var aboutVid = document.getElementById("about-video"); 
+var aboutVideoStatus = false
+
+// function playVid() { 
+//   vid.play(); 
+// } 
+
+// function pauseVid() { 
+//   vid.pause(); 
+// } 
+
+function hoverVideo(e) {  
+    $('#logo').hide()
+    $('video', this).get(0).play();
+}
+
+function hideVideo(e) {
+    $('#logo').show()
+    // $('#videosList').hide()
+    // $('video', this).get(0).pause(); 
+}
+
+// console.log("figure",figure)
+function hoverVideo2(e) {  
+    // $('#logo').hide()
+    $('video', this).get(0).play();
+}
+
+function hideVideo2(e) {
+    // $('#logo').show()
+    // $('#videosList').hide()
+    // $('video', this).get(0).pause(); 
+}
+
+function playVideo(){
+    aboutVideoStatus = !aboutVideoStatus
+    console.log("aboutVideoStatus",aboutVideoStatus)
+    console.log("play run")
+    if(aboutVideoStatus){
+        aboutVid.play()
+    }
+    else
+    {
+        aboutVid.pause()
+    }
+}
+
+
 
 var player;
 
@@ -42,3 +92,5 @@ var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+

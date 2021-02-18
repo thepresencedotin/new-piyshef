@@ -5,6 +5,8 @@
 ====================================================================
 
 ***/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import 'https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800';
 
 /*-------------------Mobile---------------------------------*/
 
@@ -159,7 +161,8 @@
 		font-weight:700;
 		display:inline-block;
 		text-decoration:underline;
-		font-family: 'Raleway', sans-serif;
+		/* font-family: 'Raleway', sans-serif; */
+		font-family: 'Roboto', sans-serif!important;		
 	}
 	
 	
@@ -332,7 +335,9 @@
 		margin-top:12px;
 		display:inline-block;
 		text-decoration:underline;
-		font-family: 'Raleway', sans-serif;
+		/* font-family: 'Raleway', sans-serif; */
+		font-family: 'Roboto', sans-serif!important;
+		
 	}
 	
 	
@@ -477,6 +482,7 @@
 		font-weight:700;
 		line-height:1.4em;
 		margin-top:15px;
+		font-family: "Playfair Display"!important;		
 	}
 	
 	.news-block .inner-box .lower-content h3 a{
@@ -502,7 +508,9 @@
 		margin-top:12px;
 		display:inline-block;
 		text-decoration:underline;
-		font-family: 'Raleway', sans-serif;
+		/* font-family: 'Raleway', sans-serif; */
+		font-family: 'Roboto', sans-serif!important;
+		
 	}
 	
 	

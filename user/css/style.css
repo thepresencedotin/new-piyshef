@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 .home {
     color: #39B550;
     font-weight: 700;
@@ -154,12 +156,13 @@
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 
 input::placeholder{
-    font-family: 'Lato'!important;
+    /* font-family: 'Lato'!important; */
+    font-family: 'Roboto', sans-serif!important;        
   }
 
   .about-heading {
@@ -241,4 +244,5 @@ input::placeholder{
 
 .text-muted {
     font-size: 20px!important;
+    font-family: 'Roboto', sans-serif!important;        
 }

@@ -60,7 +60,7 @@ nav li a {
   top: 46%;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Work sans', sans-serif;
+  /* font-family: 'Work sans', sans-serif; */
   font-weight: 300;
   letter-spacing: 4px;
   text-decoration: none;
@@ -71,7 +71,7 @@ nav li a {
 
 nav li a:before {
   content: '';
-  width: 70px;
+  width: 50px;
   height: 2px;
   background-color: #fff;
   position: absolute;
