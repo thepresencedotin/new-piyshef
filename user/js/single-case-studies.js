@@ -19,6 +19,8 @@ var params = getSearchParameters();
 var id = params.id
 var lastDocument = ""
 firebase.firestore().collection("case-studies").doc(id).get().then(function (doc) {
+    console.log("data",doc)
+    console.log("data",doc.data())
     lastDocument = doc.data().timestamp
     var heading = doc.data().heading
     var subHeading = doc.data().subHeading
@@ -37,13 +39,13 @@ firebase.firestore().collection("case-studies").doc(id).get().then(function (doc
                 </div>
             </div>
             <h3 class="mt-60 subHeading">${subHeading}</h3>
-            <p class="text-muted font-pt-serif-400">
+            <p class="text-muted">
                 <span style="font-weight: 900;">CLIENT:</span> ${clientName}
             </p>
         </div>
     </div>
     <div class="row my-5" data-aos="fade-up" data-aos-duration="2000">
-        <div class="col-lg-12 col-md-12 col-12 mx-auto my-auto font-pt-serif-400" style="color:#000;">
+        <div class="col-lg-12 col-md-12 col-12 mx-auto my-auto" style="color:#000;">
             ${content}
         </div>
     </div>

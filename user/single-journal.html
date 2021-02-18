@@ -17,15 +17,13 @@
   <link
     href="https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/journal.css">
-  <link rel="stylesheet" href="css/menu2.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/menu2.css">
+  <link rel="stylesheet" href="css/journal.css">
   <link rel="stylesheet" href="css/alljournals.css">
-  <link rel="stylesheet" href="css/journal-media-query.css">
-  <link rel="stylesheet" href="css/owl.css">
+  <link rel="stylesheet" href="css/journal-media-query.css">  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/form.css">
 
   <!-- jQuery and JS bundle w/ Popper.js -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -34,33 +32,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-  <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
-  <script data-require="moment.js@2.10.2" data-semver="2.10.2"
-    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-  <!-- <script>
-        (async () => {
-            const compiled = (await Promise.all(
-                [...document.querySelectorAll("link")]
-                    .filter(l => l.rel === 'stylesheet/scss')
-                    .map(async l => {
-                        url = l.href;
-                        const code = await (await fetch(url)).text();
-                        const basename = url.substring(url.lastIndexOf("/") + 1);
-                        Sass.writeFile(basename, code);
-                        return Sass.compile(`@import "${basename}"; `);
-                    })
-            )).join("\n");
-            document.head.innerHTML += `<style>${compiled}</style>`;
-            console.log(compiled);
-        })();
-    </script> -->
   <style>
-    input::placeholder {
-      font-family: 'Lato' !important;
+    @media only screen and (max-width: 764px) {
+      .subHeading {
+        font-size: 20px !important;
+      }
     }
   </style>
 </head>
@@ -111,41 +88,34 @@
   <!-- Desktop End -->
 
   <!--------------------------------------------------- Header End Here ---------------------------------------------------->
-  <br>
-  <!--------------------------------------------------- Journals Start ------------------------------------------------------>
+  <br><br><br>
+  <!--------------------------------------------------- Case Studies Start ------------------------------------------------------>
 
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row" style="margin-top: 150px;">
-        <div class="col-lg-12 col-md-12 col-12 mx-auto text-center">
-          <div class="row">
-            <div class="col-md-6 mx-auto text-center mb-5">
-              <h1 class="bottom-container">Journals</h1>
-              <h1 class="top-container">Journals</h1>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 text-center mx-auto mb-5">
-          <p class="text-muted" style="margin-top: -100px;">" We've curated some of the best
-            content for you. <br> Check out our blogs to get the right direction into understanding what our industry
-            is all about. "</p>
-        </div>
+  <div class="container" id="journal-content" data-aos="fade-up" data-aos-duration="2000">
+
+
+
+
+  </div>
+
+  <!--------------------------------------------------- Case Studies End ------------------------------------------------------>
+
+  <div class="container" style="position: relative;">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Related Work</h1>
       </div>
     </div>
-    <div class="row ml-5 mr-2" style="margin-top: 140px;">
-      <div class="grid mx-auto" id="journal">
+    <div class="row">
+      <div class="grid mx-0 d-flex" id="related-journal">
 
       </div>
     </div>
   </div>
 
-  <!--------------------------------------------------- Journals End ------------------------------------------------------>
-
-
-
 
   <!--------------------------------------------------- Footer Start Here -------------------------------------------------------->
-<footer class="new_footer_area bg_color">
+  <footer class="new_footer_area bg_color">
     <div class="new_footer_top">
       <div class="container">
         <div class="row">
@@ -163,10 +133,10 @@
           <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 111;">
             <div id="footer-rocket2"></div>
           </div>
-          <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
+          <div class="col-lg-2 col-md-2 mx-auto float-right">
             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
               style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18 float-right d-none d-md-block">Team Solutions</h3>
+              <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
               <div class="f_social_icon float-right">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
@@ -175,21 +145,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Mobile Screen -->
-          <div class="col-12 mx-auto float-right d-block d-md-none mt-5 pt-3">
-              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
-                style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-                <div class="f_social_icon text-center mx-auto">
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-linkedin"></a>
-                  <a href="#" class="fa fa-instagram"></a>
-                </div>
-              </div>
-            </div>
-            <!-- Mobile Screen end -->
 
         </div>
       </div>
@@ -217,38 +172,8 @@
       </div>
     </div>
   </footer>
+
   <!-------------------------------------------------- Footer End Here -------------------------------------------------------->
-
-  <!----------------------------------------- Single Journal Data Modal Start -------------------------------------------------->
-
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header border-0 p-5">
-          <h5 class="modal-title" id="exampleModalLabel">Journal</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="text-align: right;">
-            <span aria-hidden="true"><svg id="close-icon" viewBox="0 0 14.6 14.6" width="5%">
-                <path fill="none" stroke="currentColor" stroke-width=".8" d="M.3.3l14 14m0-14l-14 14">
-                </path>
-              </svg></span>
-          </button>
-        </div>
-        <div class="modal-body pl-5 pr-5 pb-5 pt-0" id="journalData">
-
-        </div>
-        <div>
-          <div class="row">
-            <div class="col-md-12 p-5">
-              <div class="text-primary p-3 font-22">Share</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!----------------------------------------- Single Journal Data Modal End -------------------------------------------------->
-
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -257,9 +182,8 @@
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
   <script src="js/cradentials.js"></script>
-  <script src="js/journal-database.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
-  <script src="js/animation-on-scroll.js"></script>
+  <script src="js/single-journal.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>  
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       $('.noloop video').removeAttr('loop');
