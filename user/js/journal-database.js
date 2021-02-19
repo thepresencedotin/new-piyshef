@@ -38,7 +38,7 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").onSnapsho
 //         <h1 class="journal-title card border-0">${title}</h1>
 //         <div class="row">
 //             <div class="col-md-4 mb-3">
-//                 <span>${moment(timestamp.toDate()).format("DD-MM-YYYY")}</span> <br>
+//                 <span> ${moment(timestamp.toDate()).format("DD-MM-YYYY")} </span> <br>
 //                 <span>by</span> <span class="journal_meta-author font-pt-serif-400">${authorName}</span>
 //             </div>
 

@@ -30,19 +30,27 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
     var content = doc.data().content
 
     document.getElementById("journal-content").innerHTML = `
-    <div class="row" style="margin-top: 100px;" data-aos="fade-up" data-aos-duration="2000">
-        <div class="col-lg-12 col-md-12 col-12 mx-auto text-center">
+    <div class="row" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-lg-12 col-md-12 col-12 mx-auto">
             <div class="row">
-                <div class="col-md-6 mx-auto text-left">
-                    <h1 class="bottom-container">${heading}</h1>
-                    <h1 class="top-container">${heading}</h1>
+                <div class="col-md-8 mx-auto text-left">
+                    <p style="color:#31A34F">${moment(timestamp.toDate()).format('LL')}</p>
+                    <h1 class="my-4" style="font-size:3rem">${subHeading}</h1>
+                    <div class="d-flex"> 
+                        <img src="assets/images/icon.png" style="width:40px;height:40px;">
+                        <span class="subHeading roboto my-auto ml-2" style="color:#AEAEAE;font-size:14px">${heading}</span>
+                    </div>
                 </div>
             </div>
-            <h3 class="mt-60 subHeading">${subHeading}</h3>
+        </div>
+    
+        <div class="col-md-12 my-3">
+            <img src="${imgUrl}" class="w-100"> 
         </div>
     </div>
+    
     <div class="row my-5" data-aos="fade-up" data-aos-duration="2000">
-        <div class="col-lg-12 col-md-12 col-12 mx-auto my-auto font-pt-serif-400" style="color:#000;">
+        <div class="col-lg-8 col-md-8 col-12 mx-auto my-auto font-pt-serif-400" style="color:#000;">
             ${content}
         </div>
     </div>
