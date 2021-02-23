@@ -28,7 +28,8 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
     var imgUrl = doc.data().imgUrl
     var timestamp = doc.data().timestamp
     var content = doc.data().content
-
+    var message = encodeURIComponent(content)
+    var whatsapp_url = "whatsapp://send?text=" + message;
     document.getElementById("journal-content").innerHTML = `
     <div class="row" data-aos="fade-up" data-aos-duration="2000">
         <div class="col-lg-12 col-md-12 col-12 mx-auto">
@@ -37,8 +38,16 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
                     <p style="color:#31A34F">${moment(timestamp.toDate()).format('LL')}</p>
                     <h1 class="my-4" style="font-size:3rem">${subHeading}</h1>
                     <div class="d-flex"> 
-                        <img src="assets/images/icon.png" style="width:40px;height:40px;">
-                        <span class="subHeading roboto my-auto ml-2" style="color:#AEAEAE;font-size:14px">${heading}</span>
+                        <div>
+                            <img src="assets/images/icon.png" style="width:40px;height:40px;">
+                            <span class="subHeading roboto my-auto ml-2" style="color:#AEAEAE;font-size:14px">${heading}</span>
+                        </div>
+                        <div style="position:absolute;right:0">
+                            <a onclick="twitterShare('${subHeading}')"><i class="fa fa-twitter" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
+                            <a onclick="facebookShare('${subHeading}')"><i class="fa fa-facebook" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
+                            <a onclick="whatsappShare('${subHeading}')" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
+                            <a onclick="share('${subHeading}')"><i class="fa fa-share-alt" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,6 +66,32 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
     `
     this.getRecentPosts()
 })
+
+function whatsappShare(text) {
+    url = "https://thepresence.in/"
+    var message = encodeURIComponent(url) + " - " + encodeURIComponent(text);
+    var whatsapp_url = "https://api.whatsapp.com/send?text=" + message;
+    // var whatsapp_url = "whatsapp://send?text=" + message;
+    window.open(whatsapp_url+'_blank')
+    // window.location.href = whatsapp_url;
+}
+
+function twitterShare(text) {
+    var url = 'https://twitter.com/intent/tweet?url=https://thepresence.in/&via=piyshef&text='+text;
+    TwitterWindow = window.open(url, 'TwitterWindow',width=600,height=300);
+    return false;
+}
+
+function facebookShare(text) {
+    url = "https://thepresence.in/"
+    window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '?t=' + encodeURIComponent(text),'_blank')
+}
+
+function share(text) {
+    url = "https://thepresence.in"    
+    window.open('https://www.addtoany.com/share_save?linkurl='+encodeURIComponent(url),'_blank')
+    // window.open('https://www.addtoany.com/share_save?linkurl='+encodeURIComponent(url) + " - " + encodeURIComponent(text),'_blank')
+}
 
 function getRecentPosts() {
     console.log(lastDocument)

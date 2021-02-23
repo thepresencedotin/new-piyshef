@@ -1,6 +1,6 @@
-var figure = $(".video").hover( hoverVideo, hideVideo );
+var figure = $(".video").hover(hoverVideo, hideVideo);
 // var figure2 = $(".video2").hover( hoverVideo2, hideVideo2 );
-var aboutVid = document.getElementById("about-video"); 
+var aboutVid = document.getElementById("about-video");
 var aboutVideoStatus = false
 
 // function playVid() { 
@@ -11,38 +11,28 @@ var aboutVideoStatus = false
 //   vid.pause(); 
 // } 
 
-function hoverVideo(e) {  
+function hoverVideo(e) {
     $('#logo').hide()
     $('video', this).get(0).play();
 }
 
 function hideVideo(e) {
     $('#logo').show()
-    // $('#videosList').hide()
-    // $('video', this).get(0).pause(); 
 }
 
-// console.log("figure",figure)
-function hoverVideo2(e) {  
-    // $('#logo').hide()
+function hoverVideo2(e) {
     $('video', this).get(0).play();
 }
 
-function hideVideo2(e) {
-    // $('#logo').show()
-    // $('#videosList').hide()
-    // $('video', this).get(0).pause(); 
-}
 
-function playVideo(){
+function playVideo() {
     aboutVideoStatus = !aboutVideoStatus
-    console.log("aboutVideoStatus",aboutVideoStatus)
+    console.log("aboutVideoStatus", aboutVideoStatus)
     console.log("play run")
-    if(aboutVideoStatus){
+    if (aboutVideoStatus) {
         aboutVid.play()
     }
-    else
-    {
+    else {
         aboutVid.pause()
     }
 }
@@ -53,8 +43,17 @@ var player;
 
 
 function showMutedVideo() {
+    let video = document.getElementById("modal-video")
+    video.pause()
     document.getElementById("mutedVideo").style.opacity = 1
-    player.pauseVideo();   
+    player.pauseVideo();
+}
+
+function modalVideoPlay() {
+    var playButton = document.getElementById("play-button");
+    document.getElementById("mutedVideo").style.opacity = 0
+    let video = document.getElementById("modal-video")
+    video.play()
 }
 
 // https://developers.google.com/youtube/iframe_api_reference
@@ -62,37 +61,37 @@ function showMutedVideo() {
 // global variable for the player
 
 // this function gets called when API is ready to use
-function onYouTubePlayerAPIReady() {
-    // create the global player from the specific iframe (#video)
-    player = new YT.Player("video", {
-        events: {
-            // call this function when player is ready to use
-            onReady: onPlayerReady
-        }
-    });
-}
+// function onYouTubePlayerAPIReady() {
+//     // create the global player from the specific iframe (#video)
+//     player = new YT.Player("video", {
+//         events: {
+//             // call this function when player is ready to use
+//             onReady: onPlayerReady
+//         }
+//     });
+// }
 
-function onPlayerReady(event) {
-    // bind events
-    var playButton = document.getElementById("play-button");
-    console.log(playButton)
-    playButton.addEventListener("click", function () {
-        document.getElementById("mutedVideo").style.opacity = 0
-        player.playVideo();
-    });
+// function onPlayerReady(event) {
+//     // bind events
+//     var playButton = document.getElementById("play-button");
+//     console.log(playButton)
+//     playButton.addEventListener("click", function () {
+//         document.getElementById("mutedVideo").style.opacity = 0
+//         player.playVideo();
+//     });
 
-    var pauseButton = document.getElementById("pause-button");
-    if(pauseButton) {
-        pauseButton.addEventListener("click", function () {
-            player.pauseVideo();
-        });
-    }
-}
+//     var pauseButton = document.getElementById("pause-button");
+//     if(pauseButton) {
+//         pauseButton.addEventListener("click", function () {
+//             player.pauseVideo();
+//         });
+//     }
+// }
 
-// Inject YouTube API script
-var tag = document.createElement("script");
-tag.src = "//www.youtube.com/player_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+// // Inject YouTube API script
+// var tag = document.createElement("script");
+// tag.src = "//www.youtube.com/player_api";
+// var firstScriptTag = document.getElementsByTagName("script")[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 

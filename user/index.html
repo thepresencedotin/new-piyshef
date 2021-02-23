@@ -193,11 +193,7 @@
     <img src="assets/images/cloudblue.png" id="blue-cloud" class="tagline-blue-cloud" alt="">
   </div>
   <!-- Tag Line End ---->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <br><br><br><br><br>
   <!-- Video Start -->
   <!-- <div class="video2" style="background-image: url(assets/images/Homevideothubnail.webp);background-size: 100%;background-repeat: no-repeat;">
     <video id="about-video" onclick="playVideo()" class="noloop" preload="none" style="width:100%!important;margin-top: -30px;height: 100%;"
@@ -210,7 +206,7 @@
   <!-- Video Start -->
   <div style="position: relative;">
     <video id="mutedVideo" src="assets/videos2/PIYSHEFVID.mp4" width="100%" autoplay muted loop></video>
-    <div id="play-button" style="position: absolute;left: 45%;top: 45%;" data-toggle="modal" data-target="#exampleModal">
+    <div id="play-button" onclick="modalVideoPlay()" style="position: absolute;left: 45%;top: 45%;" data-toggle="modal" data-target="#exampleModal">
       <img class="video2" src="assets/svg/play-button.svg" width="100px" alt="">
     </div>
   </div>
@@ -223,11 +219,12 @@
             <button type="button" onclick="showMutedVideo()" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true" style="font-size:35px;color: #fff">&times;</span>
             </button>
-            <br><br><br><br><br><br><br><br>
+            <br><br>
           </div>
           <div class="modal-body">
-            <iframe id="video" width="100%" height="540" src="//www.youtube.com/embed/ERDmoxOSB7w?enablejsapi=1&html5=1&mute=1" frameborder="0"
-              allowfullscreen></iframe>
+            <video id="modal-video" src="assets/videos2/PIYSHEFVIDfulhd.mp4" width="100%" controls></video>
+            <!-- <iframe id="video" width="100%" height="540" src="//www.youtube.com/embed/ERDmoxOSB7w?enablejsapi=1&html5=1&mute=1" frameborder="0"
+              allowfullscreen></iframe> -->
           </div>
         </div>
       </div>

@@ -217,3 +217,57 @@ h1, h2, h3, h4, h5, h6 {
 
 /*************footer End*****************/
 
+/*-------------------Mobile---------------------------------*/
+
+@media (max-width:768px) {
+    .rocket {
+        margin-top: -250px;
+        z-index: 111;
+    }
+    #footer-rocket, #footer-rocket2 {
+        width: 100%;
+        /* margin-top: 150px */
+    }
+    .footer_blue_cloud_img {
+        /* margin-top: -150px; */
+    }
+    .footer_green_cloud__img {
+
+    }
+}
+
+/*---------------------Laptop------------------------------*/
+
+@media (min-width: 1024px) {
+    .rocket {
+        margin-top: -100px;
+        z-index: 111;
+    }
+    #footer-rocket, #footer-rocket2 {
+        width: 100%;
+    }
+    .footer_blue_cloud_img {
+
+    }
+    .footer_green_cloud__img {
+
+    }
+}
+
+/*---------------------ipad-------------------------------*/
+
+@media (min-width:769px) and (max-width:1023px) {
+    .rocket {
+        margin-top: -100px;
+        z-index: 111;
+    }
+    #footer-rocket, #footer-rocket2 {
+        width: 100%;
+    }
+    .footer_blue_cloud_img {
+
+    }
+    .footer_green_cloud__img {
+
+    }
+}
