@@ -184,6 +184,7 @@
     width: 34px;
     display: block;
     cursor: pointer;
+    z-index: 999;
   }
   
   .open-overlay span {
@@ -561,6 +562,7 @@ Navigation
     width: 34px;
     display: block;
     cursor: pointer;
+    z-index: 999;    
   }
   
   .open-overlay span {
@@ -936,6 +938,7 @@ Navigation
     width: 34px;
     display: block;
     cursor: pointer;
+    z-index: 999;    
   }
   
   .open-overlay span {
