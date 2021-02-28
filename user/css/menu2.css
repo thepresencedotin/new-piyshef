@@ -1136,3 +1136,8 @@ Navigation
     color: #000;
   }
 }
+
+
+.video {
+  cursor: pointer!important;
+}
