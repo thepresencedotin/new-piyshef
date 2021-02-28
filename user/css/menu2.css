@@ -369,3 +369,7 @@ Animation keyframes
 nav ul li a:hover{
   color: #000;
 }
+
+.video {
+  cursor: pointer;
+}

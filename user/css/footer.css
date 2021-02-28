@@ -226,13 +226,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     #footer-rocket, #footer-rocket2 {
         width: 100%;
-        /* margin-top: 150px */
+        margin-top: 150px
     }
     .footer_blue_cloud_img {
-        /* margin-top: -150px; */
+        margin-top: -250px;
     }
     .footer_green_cloud__img {
-
+        margin-top: 90px;
     }
 }
 
