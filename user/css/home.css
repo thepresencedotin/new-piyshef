@@ -30,15 +30,15 @@
         left: 40%;
         top: -30%;
     }
-    .ParallaxVideo{ 
+    .ParallaxVideo {
         height: 170px;
         /* padding-bottom: 50px; */
-        padding-top: 40px; 
+        padding-top: 40px;
     }
-    .ParallaxVideo video{ 
+    .ParallaxVideo video {
         min-width: 100%;
         position: fixed;
-        top:0;
+        top: 0;
         z-index: -9999;
     }
     .ParallaxVideo h3 {
@@ -47,8 +47,31 @@
         font-weight: 700;
         text-align: center;
         text-transform: capitalize;
-    }    
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 30%;
+        height: 35vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 50px
+    }
+    .journal-left-side-shadow {
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 35vh;
+        z-index: 1;
+        position: absolute
+    }
 }
+
+
+
+
+
+
 
 
 
@@ -86,15 +109,15 @@
         left: 45%;
         top: 45%;
     }
-    .ParallaxVideo{ 
+    .ParallaxVideo {
         height: 170px;
         /* padding-bottom: 50px; */
-        padding-top: 50px; 
+        padding-top: 50px;
     }
-    .ParallaxVideo video{ 
+    .ParallaxVideo video {
         min-width: 100%;
         position: fixed;
-        top:0;
+        top: 0;
         z-index: -9999;
     }
     .ParallaxVideo h3 {
@@ -103,8 +126,28 @@
         font-weight: 700;
         text-align: center;
         text-transform: capitalize;
-    }    
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .journal-left-side-shadow {
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute
+    }
 }
+
+
+
+
 
 
 
@@ -144,15 +187,15 @@
         left: 45%;
         top: 45%;
     }
-    .ParallaxVideo{ 
+    .ParallaxVideo {
         height: 170px;
         /* padding-bottom: 50px; */
-        padding-top: 50px; 
+        padding-top: 50px;
     }
-    .ParallaxVideo video{ 
+    .ParallaxVideo video {
         min-width: 100%;
         position: fixed;
-        top:0;
+        top: 0;
         z-index: -9999;
     }
     .ParallaxVideo h3 {
@@ -161,7 +204,16 @@
         font-weight: 700;
         text-align: center;
         text-transform: capitalize;
-    }    
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
 }
 
 /* Global */

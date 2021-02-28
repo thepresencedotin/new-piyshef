@@ -1,25 +1,10 @@
-/* .footer{
-    background-color: #0855A0;
-    color: #fff;
-} */
-
-body {
-    /* background: #fbfbfd!important; */
-}
-
-.new_footer_area {
-    background: #fbfbfd;
-    margin-top: 150px;
-}
-
+/* Global */
 
 .new_footer_top {
     padding: 120px 0px 60px;
     position: relative;
 }
-.new_footer_area .footer_bottom {
-    /* padding-top: 5px; */
-}
+
 .footer_bottom {
     font-size: 14px;
     font-weight: 300;
@@ -217,9 +202,23 @@ h1, h2, h3, h4, h5, h6 {
 
 /*************footer End*****************/
 
+
+
+
+
+
+
+
+
+
+
 /*-------------------Mobile---------------------------------*/
 
 @media (max-width:768px) {
+    .new_footer_area {
+        background: #fbfbfd;
+        margin-top: 80px;
+    }
     .rocket {
         margin-top: -250px;
         z-index: 111;
@@ -236,9 +235,21 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+
+
+
+
+
+
+
 /*---------------------Laptop------------------------------*/
 
 @media (min-width: 1024px) {
+    .new_footer_area {
+        background: #fbfbfd;
+        margin-top: 150px;
+    }
     .rocket {
         margin-top: -100px;
         z-index: 111;
@@ -254,9 +265,23 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 /*---------------------ipad-------------------------------*/
 
 @media (min-width:769px) and (max-width:1023px) {
+    .new_footer_area {
+        background: #fbfbfd;
+        margin-top: 150px;
+    }
     .rocket {
         margin-top: -100px;
         z-index: 111;
