@@ -224,18 +224,18 @@ h1, h2, h3, h4, h5, h6 {
         z-index: 111;
     }
     #footer-rocket, #footer-rocket2 {
-        width: 90%;
+        width: 94%;
         margin-top: 100px
     }
     .footer_blue_cloud_img {
-        margin-top: -100px;
-        margin-left: -150px;
-        width: 250px!important;
+        margin-top: 40px;
+        margin-left: -40px;
+        width: 80%!important;
     }
     .footer_green_cloud__img {
         margin-top: 50px;
-        margin-left: 150px!important;
-        width: 250px!important;
+        margin-left: 70px!important;
+        width: 80%!important;
     }
     
 }

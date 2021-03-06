@@ -38,6 +38,10 @@
         font-size: 20px !important;
       }
     }
+    img {
+      min-width: 0%;
+      max-width: 100%;
+    }
   </style>
 </head>
 
@@ -127,84 +131,82 @@
 
   <!--------------------------------------------------- Footer Start Here -------------------------------------------------------->
   <footer class="new_footer_area bg_color" style="overflow-x: hidden">
-    <div class="new_footer_top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 mx-auto" style="z-index: 2;">
-            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title t_color">Get in Touch</h3>
-              <p>Let's see if we can create some magic together!</p>
-              <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe" placeholder="Email">
-              <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 1;">
-            <div id="footer-rocket2"></div>
-          </div>
-          <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
-            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
-              <div class="f_social_icon float-right">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 mx-auto" style="z-index: 2">
+              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                <h3 class="f-title t_color">Get in Touch</h3>
+                <p>Let's see if we can create some magic together!</p>
+                <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe" placeholder="Email">
+                <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
               </div>
             </div>
-          </div>
-          <!-- Mobile Screen -->
-          <div class="col-12 mx-auto float-right d-block d-md-none mt-5 mb-3 pt-3">
-            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-              <div class="f_social_icon text-center mx-auto">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+            <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 1;">
+              <div id="footer-rocket2"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
+                <div class="f_social_icon float-right">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
               </div>
             </div>
+  
           </div>
-          <!-- Mobile Screen end -->
+        </div>
+        <div class="row" style="margin-top: -350px;width: 100%;">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 ml-3 footer_blue_cloud floating1">
+            <img src="assets/images/cloudblue.png" class="footer_blue_cloud_img" alt="">
+          </div>
+          <div class="col-md-4 footer_green_cloud ml-5 floating2">
+            <img src="assets/images/cloudgreen.png" class="footer_green_cloud__img w-100" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="container d-block d-md-none d-lg-none">
+        <div class="row pl-3">
+          <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+            <div class="f_social_icon text-center mx-auto">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
+            </div>
+            <!-- Laptop Screen -->
+            <div class="col-lg-6 col-sm-5 text-right d-none d-md-block d-lg-block">
+              <p>Made By
+                <i class="icon_heart"></i>
+                <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
+              </p>
+            </div>
+            <!-- Mobile Screen -->
+            <div class="col-12 text-center d-block d-md-none d-lg-none pt-3">
+              <p>Made By
+                <i class="icon_heart"></i>
+                <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        </div>
-      </div>
-      <div class="row" style="margin-top: -350px;width: 100%;">
-        <div class="col-md-3"></div>
-        <div class="col-md-3 ml-3 footer_blue_cloud floating1">
-          <img src="assets/images/cloudblue.png" class="footer_blue_cloud_img w-100" alt="">
-        </div>
-        <div class="col-md-4 footer_green_cloud ml-5 floating2">
-          <img src="assets/images/cloudgreen.png" class="footer_green_cloud__img w-100" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="footer_bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-7 d-none d-md-block d-lg-block">
-            <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
-          </div>
-          <div class="col-lg-6 col-sm-7 mt-sm-5 d-block d-md-none d-lg-none">
-            <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
-          </div>
-          <!-- Laptop Screen -->
-          <div class="col-lg-6 col-sm-5 text-right d-none d-md-block d-lg-block">
-            <p>Made By
-              <i class="icon_heart"></i>
-              <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
-            </p>
-          </div>
-          <!-- Mobile Screen -->
-          <div class="col-12 text-center d-block d-md-none d-lg-none pt-3">
-            <p>Made By
-              <i class="icon_heart"></i>
-              <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-------------------------------------------------- Footer End Here -------------------------------------------------------->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
