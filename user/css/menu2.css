@@ -84,7 +84,7 @@
     content: '';
     width: 50px;
     height: 2px;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: absolute;
     top: 50%;
     left: 0;
@@ -95,7 +95,7 @@
   }
   
   nav li a:after {
-    content: attr(data-content);
+    /* content: attr(data-content); */
     font-size: 0.7rem;
     transition: all .2s linear;
     opacity: 0;

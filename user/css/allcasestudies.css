@@ -337,11 +337,12 @@ body #cda-remove {
 	
 	figure.effect-apollo h2 {
 		text-align: left;
-		font-weight: 900!important;
+		font-weight: 600!important;
 		color: white;
 		text-shadow: 2px 2px 35px #000000;
 		word-spacing:initial;
 		text-transform: capitalize;
+		font-size: 30px!important;
 	}
 	
 	figure.effect-apollo:hover img {

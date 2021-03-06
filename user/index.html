@@ -122,7 +122,8 @@
           </a>
         </li>
         <div class="overlay-navigation">
-          <nav role="navigation">
+          <!-- Laptop screen -->            
+          <nav class="d-none d-md-block d-lg-block" role="navigation">
             <ul>
               <li>
                 <a href="index.html" data-content="The beginning">Home</a>
@@ -141,6 +142,27 @@
               </li>
             </ul>
           </nav>
+
+          <!-- Mobile screen -->
+          <nav class="d-block d-md-none d-lg-none" role="navigation">
+              <ul>
+                <li>
+                  <a href="index.html" data-content="The beginning">Home</a>
+                </li>
+                <li>
+                  <a href="allcase-studies.html" data-content="Know more?">Case Studies</a>
+                </li>
+                <li>
+                  <a href="alljournals.html" data-content="Only the finest">Journals</a>
+                </li>
+                <li>
+                  <a href="about.html" data-content="Curious?">About</a>
+                </li>
+                <li>
+                  <a href="contact.html" data-content="Don't hesitate">Contact</a>
+                </li>
+              </ul>
+            </nav>
         </div>
         <li class="nav-item" onclick="Overflow()">
           <a class="nav-link open-overlay humburg home-humburg" style="z-index:111!important" href="#">
@@ -155,7 +177,7 @@
   <!------------------------------------- Header End ---------------------------------->
 
   <!-- Tag Line Start -->
-  <div style="background-color: #fff!important;position: relative;max-width: 100%;overflow-x: hidden;overflow-y: hidden">
+  <div class="tagline_container">
     <img src="assets/images/cloudgreen.png" class="tagline-green-cloud" id="green-cloud" alt="">
 
     <div class="col-lg-11 col-md-11 col-11 mx-auto" data-aos="fade-up" data-aos-duration="1000" id="tagLine">
@@ -166,7 +188,11 @@
     <img src="assets/images/cloudblue.png" id="blue-cloud" class="tagline-blue-cloud" alt="">
   </div>
   <!-- Tag Line End ---->
-  <br><br><br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- Video Start -->
   <!-- <div class="video2" style="background-image: url(assets/images/Homevideothubnail.webp);background-size: 100%;background-repeat: no-repeat;">
     <video id="about-video" onclick="playVideo()" class="noloop" preload="none" style="width:100%!important;margin-top: -30px;height: 100%;"
@@ -177,36 +203,45 @@
   </div> -->
 
   <!-- Video Start -->
-  <div style="position: relative;">
+  <div class="VideoHead-reel-wrapper">
+    <div class="VideoHead-reel-inner">
+      <video id="mutedVideo" src="assets/videos2/PIYSHEFVID.mp4" width="100%" autoplay muted loop></video>
+      <div id="play-button" onclick="modalVideoPlay()" data-toggle="modal" data-target="#exampleModal">
+        <img class="video2" src="assets/svg/play-button.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- <div style="position: relative;">
     <video id="mutedVideo" src="assets/videos2/PIYSHEFVID.mp4" width="100%" autoplay muted loop></video>
     <div id="play-button" onclick="modalVideoPlay()" data-toggle="modal" data-target="#exampleModal">
       <img class="video2" src="assets/svg/play-button.svg" alt="">
     </div>
-  </div>
+  </div> -->
 
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 1100px;margin: .75 auto">
-        <div class="modal-content" style="background-color: transparent;border: none;box-shadow: none">
-          <div class="modal-header" style="border: none">
-            <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button type="button" onclick="showMutedVideo()" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" style="font-size:35px;color: #fff">&times;</span>
-            </button>
-            <br><br>
-          </div>
-          <div class="modal-body">
-            <video id="modal-video" src="assets/videos2/PIYSHEFVIDfulhd.mp4" width="100%" controls></video>
-            <!-- <iframe id="video" width="100%" height="540" src="//www.youtube.com/embed/ERDmoxOSB7w?enablejsapi=1&html5=1&mute=1" frameborder="0"
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="max-width: 1100px;margin: .75 auto">
+      <div class="modal-content" style="background-color: transparent;border: none;box-shadow: none">
+        <div class="modal-header" style="border: none">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" onclick="showMutedVideo()" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size:35px;color: #fff">&times;</span>
+          </button>
+          <br>
+          <br>
+        </div>
+        <div class="modal-body">
+          <video id="modal-video" src="assets/videos2/PIYSHEFVIDfulhd.mp4" width="100%" controls></video>
+          <!-- <iframe id="video" width="100%" height="540" src="//www.youtube.com/embed/ERDmoxOSB7w?enablejsapi=1&html5=1&mute=1" frameborder="0"
               allowfullscreen></iframe> -->
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
   <!-- Video End -->
-    
+
   <div class="ParallaxVideo">
-    <h3 class="formula"  data-aos="fade-up" data-aos-duration="1000">Do you have a brand with a story to tell?</h3>
+    <h3 class="formula" data-aos="fade-up" data-aos-duration="1000">Do you have a brand with a story to tell?</h3>
   </div>
 
   <!-- Case Studies Section Start -->
@@ -352,78 +387,82 @@
   </footer> -->
 
 
-  <footer class="new_footer_area bg_color">
-    <div class="new_footer_top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-3 mx-auto">
-            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-              <h3 class="f-title t_color">Get in Touch</h3>
-              <p>Let's see if we can create some magic together!</p>
-              <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe" placeholder="Email">
-              <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
-            </div>
-          </div>
-          <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 111;">
-            <div id="footer-rocket2"></div>
-          </div>
-          <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
-            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
-              <div class="f_social_icon float-right">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+  <footer class="new_footer_area bg_color" style="overflow-x: hidden">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 mx-auto" style="z-index: 2">
+              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                <h3 class="f-title t_color">Get in Touch</h3>
+                <p>Let's see if we can create some magic together!</p>
+                <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe" placeholder="Email">
+                <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
               </div>
             </div>
-          </div>
-
-          <!-- Mobile Screen -->
-          <div class="col-12 mx-auto float-right d-block d-md-none mt-5 pt-3">
-            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
-              <div class="f_social_icon text-center mx-auto">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+            <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 1;">
+              <div id="footer-rocket2"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18 float-right">Team Solutions</h3>
+                <div class="f_social_icon float-right">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
               </div>
             </div>
+            <!-- Mobile Screen -->
+            <div class="col-12 mx-auto float-right d-block d-md-none mt-5 mb-3 pt-3">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                <div class="f_social_icon text-center mx-auto">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Screen end -->
+  
           </div>
-          <!-- Mobile Screen end -->
-
         </div>
-      </div>
-      <!-- <div class=""> -->
-      <div class="row" style="margin-top: -350px;width: 100%;">
-        <div class="col-md-3"></div>
-        <div class="col-md-3 ml-3 footer_blue_cloud floating1">
-          <img src="assets/images/cloudblue.png" class="footer_blue_cloud_img" alt="">
-        </div>
-        <div class="col-md-4 footer_green_cloud ml-5 floating2">
-          <img src="assets/images/cloudgreen.png" class="footer_green_cloud__img" alt="">
-        </div>
-      </div>
-      <!-- <div id="footer-cloud1"></div> -->
-      <!-- </div> -->
-    </div>
-    <div class="footer_bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-7">
-            <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
+        <div class="row" style="margin-top: -350px;width: 100%;">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 ml-3 footer_blue_cloud floating1">
+            <img src="assets/images/cloudblue.png" class="footer_blue_cloud_img w-100" alt="">
           </div>
-          <div class="col-lg-6 col-sm-5 text-right">
-            <p>Made By
-              <i class="icon_heart"></i>
-              <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
-            </p>
+          <div class="col-md-4 footer_green_cloud ml-5 floating2">
+            <img src="assets/images/cloudgreen.png" class="footer_green_cloud__img w-100" alt="">
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
+            </div>
+            <!-- Laptop Screen -->
+            <div class="col-lg-6 col-sm-5 text-right d-none d-md-block d-lg-block">
+              <p>Made By
+                <i class="icon_heart"></i>
+                <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
+              </p>
+            </div>
+            <!-- Mobile Screen -->
+            <div class="col-12 text-center d-block d-md-none d-lg-none pt-3">
+              <p>Made By
+                <i class="icon_heart"></i>
+                <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 

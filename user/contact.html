@@ -31,11 +31,7 @@
   <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
   <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
   <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
-  <style>
-    input {
-      font-family: 'Lato' !important;
-    }
-  </style>
+
 </head>
 
 <body id="body">
@@ -128,14 +124,14 @@
               <form id="contactForm">
 
                 <div class="form-group">
-                  <input type="text" class="form-control contact-text" id="name" placeholder="NAME" name="name">
+                  <input type="text" class="form-control contact-text" onkeyup="checkFormValid()" id="name" placeholder="NAME" name="name">
                 </div>
 
                 <div class="form-group">
-                  <input type="email" class="form-control contact-text" id="email" placeholder="EMAIL" name="email">
+                  <input type="email" class="form-control contact-text" onkeyup="checkFormValid()" id="email" placeholder="EMAIL" name="email">
                 </div>
 
-                <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message" id="message"></textarea>
+                <textarea class="form-control" rows="6" onkeyup="checkFormValid()" placeholder="MESSAGE" name="message" id="message"></textarea>
 
                 <button class="btn btn-primary send-button text-center" id="submit" type="submit" value="SEND">
                   <div class="button">
@@ -233,11 +229,11 @@
 
 
   <!--------------------------------------------------- Footer Start Here -------------------------------------------------------->
-  <footer class="new_footer_area bg_color">
+  <footer class="new_footer_area bg_color" style="overflow-x: hidden">
     <div class="new_footer_top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-3 mx-auto">
+          <div class="col-lg-3 col-md-3 mx-auto" style="z-index: 2;">
             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
               <h3 class="f-title t_color">Get in Touch</h3>
               <p>Let's see if we can create some magic together!</p>
@@ -245,7 +241,7 @@
               <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
             </div>
           </div>
-          <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 111;">
+          <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:-100px;z-index: 1;">
             <div id="footer-rocket2"></div>
           </div>
           <div class="col-lg-2 col-md-2 mx-auto float-right d-none d-md-block">
@@ -260,7 +256,7 @@
             </div>
           </div>
           <!-- Mobile Screen -->
-          <div class="col-12 mx-auto float-right d-block d-md-none mt-5 pt-3">
+          <div class="col-12 mx-auto float-right d-block d-md-none mt-5 mb-3 pt-3">
             <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
               <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
               <div class="f_social_icon text-center mx-auto">
@@ -288,10 +284,21 @@
     <div class="footer_bottom">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-7">
+          <div class="col-lg-6 col-sm-7 d-none d-md-block d-lg-block">
             <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
           </div>
-          <div class="col-lg-6 col-sm-5 text-right">
+          <div class="col-lg-6 col-sm-7 mt-sm-5 d-block d-md-none d-lg-none">
+            <p class="mb-0 f_400">© Piyshef 2020. All rights reserved Privacy statement | Cookie policy.</p>
+          </div>
+          <!-- Laptop Screen -->
+          <div class="col-lg-6 col-sm-5 text-right d-none d-md-block d-lg-block">
+            <p>Made By
+              <i class="icon_heart"></i>
+              <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>
+            </p>
+          </div>
+          <!-- Mobile Screen -->
+          <div class="col-12 text-center d-block d-md-none d-lg-none pt-3">
             <p>Made By
               <i class="icon_heart"></i>
               <a href="http://thepresence.in/" style="color: #0855A0;" target="_blank">Thepresence</a>

@@ -1,16 +1,20 @@
 /*-------------------Mobile---------------------------------*/
 
 @media (max-width:764px) {
+    .mt-sm-5 {
+        margin-top: 3rem!important;
+    }
     .video__banner {
         background-image: url(assets/images/logo.png);
         background-size: 150px;
-        height:58px;
+        height: 58px;
         background-repeat: no-repeat;
     }
     .logo__video {
-        width:200px!important;
-        /* margin-top: -30px; */
+        width: 250px!important;
+        margin-top: -11px;
         vertical-align: middle;
+        /* height: 100px!important; */
     }
     .header-padding {
         /* padding-bottom: 65px; */
@@ -22,7 +26,7 @@
         color: #0855A0!important;
         cursor: pointer!important;
         margin-right: 40px!important;
-        margin-top: -40px!important; 
+        margin-top: -40px!important;
     }
     .home-humburg {
         position: fixed;
@@ -31,7 +35,7 @@
         color: #0855A0!important;
         cursor: pointer;
         margin-right: 40px!important;
-        margin-top: -40px!important; 
+        margin-top: -40px!important;
     }
     .about-humburg {
         position: fixed;
@@ -40,7 +44,7 @@
         color: #0855A0!important;
         cursor: pointer;
         margin-right: 18px!important;
-        margin-top: -40px!important; 
+        margin-top: -40px!important;
     }
     #video {
         margin-top: 10px;
@@ -84,16 +88,24 @@
         margin-top: -35px!important;
         letter-spacing: 0!important;
     }
+    .tagline_container {
+        background-color: #fff!important;
+        position: relative;
+        max-width: 100%;
+        min-height: 250px;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
     .tagLine {
-        font-size: 50px!important;
+        font-size: 30px!important;
         font-family: 'Playfair Display';
         font-weight: 600;
-        padding-top: 30px;
+        padding-top: 80px;
     }
     .formula {
         font-family: 'Playfair Display';
         font-weight: 600;
-        font-size: 35px!important;
+        font-size: 30px!important;
         color: #212529;
     }
     .case-studies {
@@ -106,7 +118,7 @@
         font-family: 'Playfair Display';
         font-weight: 800;
         margin-bottom: 10px;
-        font-size: 50px;
+        font-size: 30px;
         color: #212529;
     }
     .journal-margin {
@@ -127,38 +139,29 @@
         margin-top: -35px!important
     }
     .about-service-margin {
-        margin-top: 250px; 
+        margin-top: 250px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*---------------------Laptop------------------------------*/
 
 @media (min-width: 1024px) {
+    .mt-sm-5 {
+        margin-top: 0rem!important;
+    }
     .video__banner {
         background-image: url(assets/images/logo.png);
         background-size: 240px;
-        height:58px;
+        height: 58px;
         background-repeat: no-repeat;
     }
     .logo__video {
-        width:380px!important;
+        width: 380px!important;
         margin-top: -30px;
     }
     .header-menu {
         position: absolute;
-        right:0;
+        right: 0;
         top: 43px;
     }
     .header-padding {
@@ -179,7 +182,7 @@
         color: #0855A0!important;
         cursor: pointer;
         margin-right: 70px!important;
-        z-index:111111!important;
+        z-index: 111111!important;
     }
     #video {
         margin-top: -150px;
@@ -223,6 +226,13 @@
         margin-top: -35px!important;
         letter-spacing: 0!important;
     }
+    .tagline_container {
+        background-color: #fff!important;
+        position: relative;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
     .tagLine {
         font-size: 105px!important;
         font-family: 'Playfair Display';
@@ -261,43 +271,29 @@
         margin-top: -35px!important
     }
     .about-service-margin {
-        margin-top: 400px; 
+        margin-top: 400px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*---------------------ipad-------------------------------*/
 
 @media (min-width:765px) and (max-width:1023px) {
+    .mt-sm-5 {
+        margin-top: 0rem!important;
+    }
     .video__banner {
         background-image: url(assets/images/logo.png);
         background-size: 240px;
-        height:58px;
+        height: 58px;
         background-repeat: no-repeat;
     }
     .logo__video {
-        width:380px!important;
+        width: 380px!important;
         /* margin-top: -10px; */
     }
     .header-menu {
         position: absolute;
-        right:0;
+        right: 0;
         top: 43px;
     }
     .humburg {
@@ -358,6 +354,13 @@
         margin-top: -35px!important;
         letter-spacing: 0!important;
     }
+    .tagline_container {
+        background-color: #fff!important;
+        position: relative;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
     .tagLine {
         font-size: 90px!important;
         font-family: 'Playfair Display';
@@ -397,7 +400,6 @@
         margin-top: -35px!important
     }
     .about-service-margin {
-        margin-top: 400px; 
+        margin-top: 400px;
     }
-
 }

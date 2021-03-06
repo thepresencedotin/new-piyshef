@@ -1,7 +1,7 @@
 /* Global */
 
 .new_footer_top {
-    padding: 120px 0px 60px;
+    padding: 40px 0px 60px;
     position: relative;
 }
 
@@ -217,22 +217,27 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width:768px) {
     .new_footer_area {
         background: #fbfbfd;
-        margin-top: 80px;
+        margin-top: 20px;
     }
     .rocket {
         margin-top: -250px;
         z-index: 111;
     }
     #footer-rocket, #footer-rocket2 {
-        width: 100%;
-        margin-top: 150px
+        width: 90%;
+        margin-top: 100px
     }
     .footer_blue_cloud_img {
-        margin-top: -250px;
+        margin-top: -100px;
+        margin-left: -150px;
+        width: 250px!important;
     }
     .footer_green_cloud__img {
-        margin-top: 90px;
+        margin-top: 50px;
+        margin-left: 150px!important;
+        width: 250px!important;
     }
+    
 }
 
 
@@ -248,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
     .new_footer_area {
         background: #fbfbfd;
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .rocket {
         margin-top: -100px;
@@ -258,10 +263,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     .footer_blue_cloud_img {
-
+        margin-top: -100px;
     }
     .footer_green_cloud__img {
-
+        margin-top: 80px;
     }
 }
 
@@ -280,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width:769px) and (max-width:1023px) {
     .new_footer_area {
         background: #fbfbfd;
-        margin-top: 150px;
+        margin-top: 100px;
     }
     .rocket {
         margin-top: -100px;
@@ -290,9 +295,29 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     .footer_blue_cloud_img {
-
+        margin-top: -250px;
     }
     .footer_green_cloud__img {
-
+        margin-top: 90px;
     }
 }
+
+
+.btn-primary {
+    background-color: #0152A3!important;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:disabled {
+    background-color: #0152A3!important;
+    color: #fff;
+    border: none; 
+}
+
+.btn-primary:hover {
+    background-color: #30A34C!important;
+    color: #fff;
+    border: none;
+}
+

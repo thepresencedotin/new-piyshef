@@ -1,4 +1,6 @@
-// $('#loading-modal').modal('show');
+$("#submit").attr("disabled", false);
+checkFormValid()
+
 document.getElementById("contactForm").addEventListener("submit",(e)=>{
     var name = document.getElementById("name").value
     var email = document.getElementById("email").value
@@ -17,6 +19,18 @@ document.getElementById("contactForm").addEventListener("submit",(e)=>{
 function add(data){
     firebase.firestore().collection("contact").add(data).then(res=>{
         swal("Sent!", "We Will Contact Soon!", "success");
-        // $('#loading-modal').modal('hide');    
     })
+}
+
+function checkFormValid() {
+    var name = document.getElementById("name").value
+    var email = document.getElementById("email").value
+    var message = document.getElementById("message").value
+    if(name && email && message) {
+        $("#submit").attr("disabled", false);
+    }
+    else
+    {
+        $("#submit").attr("disabled", true);
+    }
 }
