@@ -47,3 +47,18 @@ function Overflow() {
         document.getElementById("body").style.overflowY = "visible"
     }
 }
+
+document.getElementById("logo").style.display = "none";
+
+$(window).scroll(function() {    
+  const scroll = window.scrollY;
+  if(scroll > 56) {
+    $('#logo').fadeIn();
+    document.getElementById("logo").className = "d-block d-md-none d-lg-none";
+  }
+  else
+  {
+    $('#logo').fadeOut();
+    document.getElementById("logo").className = "d-none d-md-none d-lg-none";
+  }
+})
