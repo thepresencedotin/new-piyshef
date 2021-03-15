@@ -32,9 +32,10 @@
         width: 38px;        
     }
     .ParallaxVideo {
-        height: 140px;
+        /* height: 140px; */
         /* padding-bottom: 50px; */
         padding-top: 40px;
+        padding-bottom: 45px
     }
     .ParallaxVideo video {
         min-width: 100%;

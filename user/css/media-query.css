@@ -13,11 +13,11 @@
     }
 
     .logo__video {
-        width: 100% !important;
-        position: fixed;
+        width: 80% !important;
+        /* position: fixed; */
         z-index: 99 !important;
         left: 0;
-        top: -30px
+        top: -20px
             /* height: 100px!important; */
     }
 
@@ -111,10 +111,11 @@
         background-color: #fff !important;
         position: relative;
         max-width: 100%;
-        min-height: 250px;
+        min-height: 300px;
         overflow-x: hidden;
         overflow-y: hidden;
-        margin-top: 70px;
+        margin-bottom: 70px;
+
     }
 
     .tagLine {
