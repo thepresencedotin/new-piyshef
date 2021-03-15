@@ -17,7 +17,7 @@ var animation = bodymovin.loadAnimation({
 var animate = bodymovin.loadAnimation({
     container: document.getElementById('logo__videos'),
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay: true,
     path: 'assets/json/logo.json'
 })
