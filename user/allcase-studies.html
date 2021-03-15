@@ -64,10 +64,10 @@
 
   <!--------------------------------------------------- Header Start Here ---------------------------------------------------->
   <!-- Desktop Start -->
-  <div style="background-color: #fff;">
+  <div style="background-color: #fff;margin-bottom: 50px;">
     <div class="col-lg-11 col-md-11 col-11 mx-auto pt-lg-5 header-padding">
       <ul class="nav">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <div style="width: 100%!important;">
             <div class="video" onclick="goToHomePage()">
               <video autoplay preload="auto" id="logo__video" class="logo__video">
@@ -76,10 +76,18 @@
               </video>
             </div>
           </div>
+        </li> -->
+        <li class="nav-item">
+          <div class="logo__video">
+            <div class="video" onclick="goToHomePage()">
+              <div id="logo__videos"></div>
+            </div>
+          </div>
         </li>
-        <li class="nav-item" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
+
+        <!-- <li class="nav-item" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
           <a href="index.html"><img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt=""></a>
-        </li>
+        </li> -->
         <li class="nav-item mr-4 header-menu">
           <a class="nav-link d-none d-md-block d-lg-block" style="color: #0855A0;font-size: xx-large;">
             Menu
