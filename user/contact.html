@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
     crossorigin="anonymous">
   <!-- Add the new slick-theme.css if you want the default styling -->
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800"
-    rel="stylesheet">
+    rel="stylesheet"> -->
   <link rel="stylesheet" href="css/menu2.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/common.css">
@@ -36,6 +36,11 @@
     img {
       min-width: 0%;
       max-width: 100%;
+    }
+
+    @font-face {
+      font-family: "Playfair Display";
+      src: url(assets/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
     }
   </style>
 </head>
@@ -58,7 +63,9 @@
           </div>
         </li>
         <li class="nav-item" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
-          <a href="index.html"><img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt=""></a>
+          <a href="index.html">
+            <img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt="">
+          </a>
         </li>
         <li class="nav-item mr-4 header-menu">
           <a class="nav-link d-none d-md-block d-lg-block" style="color: #0855A0;font-size: xx-large;">
@@ -117,10 +124,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-12 text-center">
+        <!-- <div class="col-md-12 text-center">
           <p class="text-muted" style="margin-top: -45px!important;">We believe in building the best for your brand. Our customer relations are the base of our organization.
             <br> Let's create some amazing work together! Fill this form and we'll get right back to you.
           </p>
+        </div> -->
+        <div class="col-md-12 text-left mx-auto mb-5 text-md-center">
+          <p class="text-muted" style="margin-top: -50px;font-weight: 100;font-size:30px!important;">" We believe in building the best for your brand. Our customer relations are the base of our organization.Let's
+            create some amazing work together! Fill this form and we'll get right back to you."</p>
         </div>
         <div class="col-md-10 mx-auto my-5">
           <div class="row">
@@ -236,6 +247,40 @@
 
   <!--------------------------------------------------- Contact Us End ------------------------------------------------------>
 
+
+  <!-- Map Start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=SMB%20buildmart%20building,%201st%20Floor,%20Delhi%20Gate,%20Udaipur%20313001%20(Opposite%20Police%20Control%20Room)&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://yt2.org"></a>
+            <br>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 100%;
+              }
+            </style>
+            <a href="https://google-map-generator.com"></a>
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none!important;
+                height: 500px;
+                width: 100%;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map End -->
 
   <!--------------------------------------------------- Footer Start Here -------------------------------------------------------->
   <footer class="new_footer_area bg_color" style="overflow-x: hidden">

@@ -94,7 +94,8 @@
         max-width: 100%;
         min-height: 250px;
         overflow-x: hidden;
-        overflow-y: hidden
+        overflow-y: hidden;
+        margin-top: 70px;
     }
     .tagLine {
         font-size: 30px!important;
@@ -148,6 +149,9 @@
 @media (min-width: 1024px) {
     .mt-sm-5 {
         margin-top: 0rem!important;
+    }
+    .text-md-center {
+        text-align: center;   
     }
     .video__banner {
         background-image: url(assets/images/logo.png);
@@ -280,6 +284,9 @@
 @media (min-width:765px) and (max-width:1023px) {
     .mt-sm-5 {
         margin-top: 0rem!important;
+    }
+    .text-md-center {
+        text-align: center;   
     }
     .video__banner {
         background-image: url(assets/images/logo.png);

@@ -12,12 +12,11 @@
   <link rel="stylesheet" href="css/media-query.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous">
   <!-- Add the new slick-theme.css if you want the default styling -->
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800"
+  <link href="https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.family=Playfair+Display:wght@600;800"
     rel="stylesheet">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/common.css">
@@ -26,11 +25,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- jQuery and JS bundle w/ Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -42,8 +39,8 @@
       animation-name: arrow-floating;
       animation-duration: 3.1s;
       animation-iteration-count: infinite;
-      animation-timing-function: ease-in;
-      margin-left: 30px;
+      animation-timing-function: ease-in-out;
+      /* margin-left: 30px; */
     }
 
     .floating2 {
@@ -68,12 +65,19 @@
         transform: translate(0, -0px);
       }
     }
+
     img {
       min-width: 0%!important;
       max-width: 100%!important;
     }
+
+    @font-face {
+      font-family: "Playfair Display";
+      src: url(assets/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+    }
   </style>
 </head>
+
 <body id="body">
 
   <!--------------------------------------------------- Header Start Here ---------------------------------------------------->
@@ -92,7 +96,9 @@
           </div>
         </li>
         <li class="nav-item" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
-          <a href="index.html"><img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt=""></a>
+          <a href="index.html">
+            <img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt="">
+          </a>
         </li>
         <li class="nav-item mr-4 header-menu">
           <a class="nav-link d-none d-md-block d-lg-block" style="color: #0855A0;font-size: xx-large;">
@@ -134,7 +140,9 @@
   <!-- Desktop End -->
 
   <!--------------------------------------------------- Header End Here ---------------------------------------------------->
-  <br><br><br>
+  <br>
+  <br>
+  <br>
   <!--------------------------------------------------- About Us Start ------------------------------------------------------>
 
   <div class="container">
@@ -145,15 +153,19 @@
           <h1 class="top-container">About Us</h1>
         </div>
         <!-- <h3 class="font-pt-serif-400">Who We Are</h3> -->
-        <h4 style="margin-top:-90px;font-weight: 400" class="text-left">We are Piyshef, a company that loves to Collaborate,
-          create and execute.</h4>
-        <div class="col-md-12 p-0">
-          <p class="text-muted text-left" style="line-height: 28px;font-weight: 300">Piyshef is an all-in-one platform for small
-            businesses to
-            flourish. We empower individuals to grow their businesses through our multidimensional approach.
-            How, you may ask? You tell us your story. Our team of highly-skilled professionals will not just
-            brand your product/service- it will create an experience for your users, making you the best out
-            there. <br> We believe in less talk and more action. Let's get to it, shall we?</p>
+        <div class="d-none d-md-block d-lg-block">
+          <h4 style="margin-top:-90px;font-weight: 400;font-size: 2rem" class="text-left text-md-center">We are Piyshef, a company that loves to Collaborate, create and execute.</h4>
+          <div class="col-md-12 p-0">
+            <p class="text-muted text-left text-md-center" style="line-height: 45px;font-weight: 100;font-size: 30px!important">Piyshef is an all-in-one platform for small businesses to flourish. We empower individuals to grow their businesses
+              through our multidimensional approach. How, you may ask? You tell us your story. Our team of highly-skilled
+              professionals will not just brand your product/service- it will create an experience for your users, making
+              you the best out there. We believe in less talk and more action. Let's get to it, shall we?</p>
+          </div>
+        </div>
+
+        <div class="col-md-12 text-left mx-auto mb-5 text-md-center d-block d-md-none d-lg-none">
+          <p class="text-muted" style="margin-top: -100px;font-weight: 100;font-size:30px!important;">" We are Piyshef, a company that loves to Collaborate, create and execute. We believe in less talk and more action.
+            Let's get to it, shall we? "</p>
         </div>
       </div>
     </div>
@@ -164,18 +176,20 @@
       <!-- Dasktop start -->
       <div class="col-md-12 text-center d-none d-md-block" style="margin-top: 20px;">
         <a href="#services">
-          <img src="assets/svg/arrow-down.svg" class="arrow-floating1" width="5%" alt=""><br>
+          <img src="assets/svg/arrow-down.svg" class="arrow-floating1" width="5%" alt="">
+          <br>
         </a>
       </div>
-      <!-- Dasktop end --> 
+      <!-- Dasktop end -->
 
       <!-- mobile start -->
       <div class="col-md-12 text-center mx-auto d-block d-md-none" style="margin-top: 20px;">
         <a href="#services">
-          <img src="assets/svg/arrow-down.svg" class="arrow-floating1" width="20%" alt=""><br>
+          <img src="assets/svg/arrow-down.svg" class="arrow-floating1" width="20%" alt="">
+          <br>
         </a>
       </div>
-      <!-- mobile end -->      
+      <!-- mobile end -->
     </div>
   </div>
   <!--------------------------------------------------- Services Us Start ------------------------------------------------------>
@@ -198,9 +212,8 @@
             </div>
             <!-- <p class="heading" id="a">hover with letter-spacing = 1px transition</p>
             <p class="heading" id="b">hover with letter-spacing = 1em transition</p> -->
-            <p>We take your storyline, your work and create a digital presence for your brand. Why
-              multidimensional? We give you a 360° view into the digital world, increasing your visibility
-              through a multidimensional approach.</p>
+            <p>We take your storyline, your work and create a digital presence for your brand. Why multidimensional? We give
+              you a 360° view into the digital world, increasing your visibility through a multidimensional approach.</p>
           </div>
           <div class="col-md-4"></div>
           <div class="col-md-4"></div>
@@ -208,18 +221,17 @@
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">2.</p>
               <h1 class="about-heading heading" id="a">Paid Marketing</h1>
-              <p>Companies spend millions on marketing, but don't succeed in marking their presence. We'll
-                help you boost your presence through simple tools that you will find effective and
-                efficient.</p>
+              <p>Companies spend millions on marketing, but don't succeed in marking their presence. We'll help you boost your
+                presence through simple tools that you will find effective and efficient.
+              </p>
             </div>
           </div>
           <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">3.</p>
               <h1 class="about-heading heading" id="b">Website and App Development</h1>
-              <p>Your website/app is the face of your brand. Just think of us as your new stylist! We can
-                create simple, minimalistic, funky, bright and vibrant website and app interfaces making
-                your user's experience 1000x times better.</p>
+              <p>Your website/app is the face of your brand. Just think of us as your new stylist! We can create simple, minimalistic,
+                funky, bright and vibrant website and app interfaces making your user's experience 1000x times better.</p>
             </div>
           </div>
           <div class="col-md-4"></div>
@@ -228,18 +240,18 @@
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">4.</p>
               <h1 class="about-heading heading" id="a">SEO</h1>
-              <p>Yes, the treat for search engine crawlers. These engines are getting smart every day, which
-                means your website has to become smart too. We'll increase your rankings and optimize your
-                website.</p>
+              <p>Yes, the treat for search engine crawlers. These engines are getting smart every day, which means your website
+                has to become smart too. We'll increase your rankings and optimize your website.
+              </p>
             </div>
           </div>
           <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">5.</p>
               <h1 class="about-heading heading" id="a">Social Media </h1>
-              <p>With 2.5 billion users of social media platforms in the world, you know how dynamic and
-                competitive this space is. Let us ease it out for you and help you #influence with your
-                brand!</p>
+              <p>With 2.5 billion users of social media platforms in the world, you know how dynamic and competitive this space
+                is. Let us ease it out for you and help you #influence with your brand!
+              </p>
             </div>
           </div>
           <div class="col-md-4"></div>
@@ -248,16 +260,16 @@
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;right: 2%;">6.</p>
               <h1 class="about-heading heading" id="a">Content Writing </h1>
-              <p>Your brand is your story. Let's craft it together and create content which will provide an
-                experience to your users like never before. </p>
+              <p>Your brand is your story. Let's craft it together and create content which will provide an experience to your
+                users like never before. </p>
             </div>
           </div>
           <div class="col-md-7 my-5" data-aos="fade-up" data-aos-duration="2000">
             <div style="position: relative;">
               <p style="font-size: 250px;opacity: .1;position: absolute;top: -150px;left: 2%;">7.</p>
-            <h1 class="about-heading heading" id="a">Online Consultancy </h1>
-            <p>We're here to guide you, be your armor in the competitive digital place. Consider us your
-              North Star and we'll equip you enough to create a change.</p>
+              <h1 class="about-heading heading" id="a">Online Consultancy </h1>
+              <p>We're here to guide you, be your armor in the competitive digital place. Consider us your North Star and we'll
+                equip you enough to create a change.</p>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-$('.open-overlay').click(function() {
+$('.open-overlay').click(function () {
   var overlay_navigation = $('.overlay-navigation'),
     nav_item_1 = $('nav li:nth-of-type(1)'),
     nav_item_2 = $('nav li:nth-of-type(2)'),
@@ -37,27 +37,36 @@ $('.open-overlay').click(function() {
 var hidden = false
 
 function Overflow() {
-    hidden = !hidden
-    console.log(hidden)
-    if(hidden) {
-        document.getElementById("body").style.overflowY = "hidden"
-    }
-    else
-    {
-        document.getElementById("body").style.overflowY = "visible"
-    }
+  hidden = !hidden
+  console.log(hidden)
+  if (hidden) {
+    document.getElementById("body").style.overflowY = "hidden"
+  }
+  else {
+    document.getElementById("body").style.overflowY = "visible"
+  }
 }
 
-document.getElementById("logo").style.display = "none";
+"use strict";
+// document.getElementById("logo").style.display = "none";
+document.getElementById("logo").className = "d-none d-md-none d-lg-none";
 
-$(window).scroll(function() {    
+$('#logo').fadeOut();
+$(window).scroll(function () {
   const scroll = window.scrollY;
-  if(scroll > 56) {
+  // if(scroll == 0) {
+  //   console.log(scroll)
+  //   document.getElementById("logo").className = "d-none d-md-none d-lg-none";
+  // }
+  if (scroll > 56) {
+    // console.log("if")
+    document.getElementById("logo").classList.remove("d-none");
+    // console.log("remove class")
     $('#logo').fadeIn();
+    document.getElementById("logo").style.display = "block";
     document.getElementById("logo").className = "d-block d-md-none d-lg-none";
   }
-  else
-  {
+  else {
     $('#logo').fadeOut();
     document.getElementById("logo").className = "d-none d-md-none d-lg-none";
   }
