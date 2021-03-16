@@ -114,8 +114,7 @@
         min-height: 300px;
         overflow-x: hidden;
         overflow-y: hidden;
-        margin-bottom: 70px;
-
+        /* margin-bottom: 70px; */
     }
 
     .tagLine {

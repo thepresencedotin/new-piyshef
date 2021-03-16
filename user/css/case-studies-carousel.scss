@@ -90,8 +90,8 @@
             content: "";
             background: #fff;
             color: #fff;
-            height: 2px;
-            width: 20px;
+            height: 6px;
+            width: 40px;
             border-radius: 0;
             position: absolute;
             top: 50%;
@@ -99,14 +99,14 @@
             left: auto;
             transform: translateY(-50%);
             transition: all 0.3s ease-in-out;
-            opacity: 0.6;
+            opacity: 0.3;
           }
         }
   
         &.slick-active {
           button {
             &:before {
-              width: 40px;
+              width: 50px;
               opacity: 1;
             }
           }
@@ -239,7 +239,7 @@
       height: auto;
       bottom: auto;
       top: 25%;
-      right: 0;
+      right: -15px;
       transform: translateY(-50%);
       left: auto;
       color: #fff;
@@ -260,8 +260,8 @@
             content: "";
             background: #fff;
             color: #fff;
-            height: 2px;
-            width: 20px;
+            height: 6px;
+            width: 50px;
             border-radius: 0;
             position: absolute;
             top: 50%;
@@ -269,14 +269,14 @@
             left: auto;
             transform: translateY(-50%);
             transition: all 0.3s ease-in-out;
-            opacity: 0.6;
+            opacity: 0.3;
           }
         }
   
         &.slick-active {
           button {
             &:before {
-              width: 40px;
+              width: 70px;
               opacity: 1;
             }
           }
@@ -413,7 +413,7 @@
       height: auto;
       bottom: auto;
       top: 30%;
-      right: 0;
+      right: -15px;
       transform: translateY(-50%);
       left: auto;
       color: #fff;
@@ -434,8 +434,8 @@
             content: "";
             background: #fff;
             color: #fff;
-            height: 2px;
-            width: 20px;
+            height: 6px;
+            width: 50px;
             border-radius: 0;
             position: absolute;
             top: 50%;
@@ -443,14 +443,14 @@
             left: auto;
             transform: translateY(-50%);
             transition: all 0.3s ease-in-out;
-            opacity: 0.6;
+            opacity: 0.3;
           }
         }
   
         &.slick-active {
           button {
             &:before {
-              width: 40px;
+              width: 70px;
               opacity: 1;
             }
           }
