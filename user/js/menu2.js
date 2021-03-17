@@ -51,23 +51,39 @@ function Overflow() {
 // document.getElementById("logo").style.display = "none";
 document.getElementById("logo").className = "d-none d-md-none d-lg-none";
 
-$('#logo').fadeOut();
+// $('#logo').fadeOut();
 $(window).scroll(function () {
   const scroll = window.scrollY;
   // if(scroll == 0) {
   //   console.log(scroll)
   //   document.getElementById("logo").className = "d-none d-md-none d-lg-none";
   // }
+  hideLogoOnFooter()
   if (scroll > 56) {
     // console.log("if")
     document.getElementById("logo").classList.remove("d-none");
     // console.log("remove class")
-    $('#logo').fadeIn();
+    // $('#logo').fadeIn();
     document.getElementById("logo").style.display = "block";
     document.getElementById("logo").className = "d-block d-md-none d-lg-none";
   }
   else {
-    $('#logo').fadeOut();
+    // $('#logo').fadeOut();
     document.getElementById("logo").className = "d-none d-md-none d-lg-none";
   }
 })
+
+function hideLogoOnFooter() {
+  console.log("fn run")
+  if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+    console.log("fn if")
+    "use strict";
+    document.getElementById("logo2").style.display = "none";
+    document.getElementById("logo2").className = "d-none d-md-none d-lg-none";
+  }
+  else {
+    // $('#logo').fadeIn();
+    document.getElementById("logo2").style.display = "block";
+    document.getElementById("logo2").className = "d-block d-md-none d-lg-none";
+  }
+}

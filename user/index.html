@@ -63,7 +63,6 @@
   <script data-require="moment.js@2.10.2" data-semver="2.10.2" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
 
   <style>
-
     img {
       min-width: 0%!important;
       max-width: 100%!important;
@@ -105,7 +104,7 @@
           </div>
         </li>
         <li class="nav-item d-block d-md-none d-lg-none" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
-          <a href="index.html">
+          <a href="index.html" id="logo2">
             <img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important" width="100%" alt="">
           </a>
         </li>
@@ -368,6 +367,11 @@
               <p>Let's see if we can create some magic together!</p>
               <input type="text" name="EMAIL" class="form-control memail" onkeyup="isDiable()" id="subscribe" placeholder="Email">
               <button class="btn btn-primary my-3 enableOnInput" disabled="disabled" onclick="onSubscribe()" type="submit">Subscribe</button>
+            </div>
+            <div class="text-center d-block d-md-none d-lg-none">
+              <a href="index.html">
+                <img src="assets/images/logo.png" class="pt-4" width="150px" alt="">
+              </a>
             </div>
           </div>
           <div class="col-lg-7 col-md-7 mx-auto text-center rocket" style="margin-top:0px;z-index: 1;">

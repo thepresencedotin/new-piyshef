@@ -45,6 +45,7 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
                         <div style="position:absolute;right:0">
                             <a onclick="twitterShare('${subHeading}')"><i class="fa fa-twitter" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
                             <a onclick="facebookShare('${subHeading}')"><i class="fa fa-facebook" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
+                            <a onclick="linkedinShare('${subHeading}')"><i class="fa fa-linkedin" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
                             <a onclick="whatsappShare('${subHeading}')" data-action="share/whatsapp/share" target="_blank"><i class="fa fa-whatsapp" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
                             <a onclick="share('${subHeading}')"><i class="fa fa-share-alt" style="font-size:22px;color:#757575;cursor:pointer"></i></a>&nbsp;&nbsp;
                         </div>
@@ -69,28 +70,33 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
 })
 
 function whatsappShare(text) {
-    url = "https://thepresence.in/"
+    url = "https://www.piyshef.com/"
     var message = encodeURIComponent(url) + " - " + encodeURIComponent(text);
     var whatsapp_url = "https://api.whatsapp.com/send?text=" + message;
     // var whatsapp_url = "whatsapp://send?text=" + message;
-    window.open(whatsapp_url+'_blank')
+    window.open(whatsapp_url)
     // window.location.href = whatsapp_url;
 }
 
 function twitterShare(text) {
-    var url = 'https://twitter.com/intent/tweet?url=https://thepresence.in/&via=piyshef&text='+text;
-    TwitterWindow = window.open(url, 'TwitterWindow',width=600,height=300);
+    var url = 'https://twitter.com/intent/tweet?url=https://www.piyshef.com/&via=piyshef&text=' + text;
+    TwitterWindow = window.open(url, 'TwitterWindow', width = 600, height = 300);
     return false;
 }
 
 function facebookShare(text) {
-    url = "https://thepresence.in/"
-    window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '?t=' + encodeURIComponent(text),'_blank')
+    url = "https://www.piyshef.com/"
+    window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url) + '?t=' + encodeURIComponent(text), '_blank')
+}
+
+function linkedinShare(text) {
+    url = "https://www.piyshef.com/"
+    window.open('https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(url) + '?t=' + encodeURIComponent(text), '_blank')
 }
 
 function share(text) {
-    url = "https://thepresence.in"    
-    window.open('https://www.addtoany.com/share_save?linkurl='+encodeURIComponent(url),'_blank')
+    url = "https://www.piyshef.com"
+    window.open('https://www.addtoany.com/share_save?linkurl=' + encodeURIComponent(url), '_blank')
     // window.open('https://www.addtoany.com/share_save?linkurl='+encodeURIComponent(url) + " - " + encodeURIComponent(text),'_blank')
 }
 

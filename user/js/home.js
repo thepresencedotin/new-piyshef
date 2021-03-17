@@ -117,10 +117,9 @@ function showJournals() {
         var author = ""
         var title = ""
         snapshot.forEach(element => {
-            document.getElementById("scrollHorizontal").innerHTML += ` <div class="news-block">
+            document.getElementById("scrollHorizontal").innerHTML += ` <div class="news-block" onclick="goToSingleJournal('${element.id}')">
         <div class="inner-box">
-          <div class="image">
-            <a href="alljournals.html"><img src="${element.data().imgUrl}" alt="" /></a>
+          <div class="image" style="background-image:url(${element.data().imgUrl};)">
           </div>
           <div class="lower-content">
             <ul class="post-meta">
@@ -206,3 +205,7 @@ function revealVideo(div,video_id) {
   function hideLoader() {
       document.getElementById("loader").style.display = "none";
   }
+
+  function goToSingleJournal(id) {
+    window.location.href = "single-journal.html?id=" + id
+}

@@ -21,4 +21,16 @@ var animate = bodymovin.loadAnimation({
     autoplay: true,
     path: 'assets/json/logo.json'
 })
+
+var figure = $("#logo__videos").hover(hoverVideo, hideVideo);
+
+function hoverVideo(e) {
+    animate.goToAndPlay(0);
+}
+
+function hideVideo(e) {
+    setTimeout(animate.play() , 3000);
+}
+
+
 // animate.setSpeed(0.5);
