@@ -46,6 +46,11 @@
 </head>
 
 <body id="body">
+  <!-- Loader Start -->
+  <div id="loader" class="loader_container">
+    <img src="assets/images/icon.png" width="20%" class="loader" alt="">
+  </div>
+  <!-- Loader End -->
 
   <!--------------------------------------------------- Header Start Here ---------------------------------------------------->
   <!-- Desktop Start -->
@@ -393,6 +398,11 @@
   </script>
   <script src="js/lottie.js"></script>
   <script src="js/lottie-images.js"></script>
+  <script>
+    setTimeout(() => {
+      document.getElementById("loader").style.display = "none";
+    }, 1000);
+  </script>
 </body>
 
 </html>

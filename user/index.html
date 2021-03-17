@@ -62,33 +62,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script data-require="moment.js@2.10.2" data-semver="2.10.2" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
 
-  <!-- Loader Style Start -->
   <style>
-    .loader {
-      border: 16px solid #f3f3f3;
-      /* Light grey */
-      border-top: 16px solid #3498db;
-      /* Blue */
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      animation: spin 2s linear infinite;
-      margin: auto;
-    }
 
     img {
       min-width: 0%!important;
       max-width: 100%!important;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
     }
 
     @font-face {
@@ -96,20 +74,13 @@
       src: url(assets/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
     }
   </style>
-  <!-- Loader Style End -->
 </head>
 
 <body id="body" style="overflow-x: hidden">
   <!-- Loader Start -->
-  <!-- <div class="modal" id="loading-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered " role="document">
-      <div class="modal-content" style="background: none;border: none;">
-        <div class="modal-body" style="background: none;">
-          <div class="loader"></div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  <div id="loader" class="loader_container">
+    <img src="assets/images/icon.png" width="20%" class="loader" alt="">
+  </div>
   <!-- Loader End -->
 
   <!------------------------------------- Header Start ---------------------------------->

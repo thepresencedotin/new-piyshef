@@ -55,13 +55,20 @@
     min-width: 0%;
     max-width: 100%;
   }
-  @font-face {
-      font-family: "Playfair Display";
-      src: url(assets/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
-    }
-</style>
-<body id="body">
 
+  @font-face {
+    font-family: "Playfair Display";
+    src: url(assets/font/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+  }
+</style>
+
+<body id="body">
+  <!-- Loader Start -->
+  <div id="loader" class="loader_container">
+    <img src="assets/images/icon.png" width="20%" class="loader" alt="">
+  </div>
+  <!-- Loader End -->
+  
   <!--------------------------------------------------- Header Start Here ---------------------------------------------------->
   <!-- Desktop Start -->
   <div style="background-color: #fff;margin-bottom: 50px;">
@@ -86,7 +93,9 @@
         </li>
 
         <li class="nav-item" id="logo" style="width: 150px;position: fixed;z-index: 999!important;">
-          <a href="index.html"><img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt=""></a>
+          <a href="index.html">
+            <img src="assets/images/logo.png" class="pt-3" style="z-index: 999!important;" width="100%" alt="">
+          </a>
         </li>
         <li class="nav-item mr-4 header-menu">
           <a class="nav-link d-none d-md-block d-lg-block" style="color: #0855A0;font-size: xx-large;">

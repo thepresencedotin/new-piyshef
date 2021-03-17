@@ -13,4 +13,9 @@ firebase.firestore().collection("case-studies").orderBy("priority", "asc").onSna
         </figure>
         `
     });
+    hideLoader()
 })
+
+function hideLoader() {
+    document.getElementById("loader").style.display = "none";
+}

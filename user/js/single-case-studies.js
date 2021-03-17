@@ -19,8 +19,8 @@ var params = getSearchParameters();
 var id = params.id
 var lastDocument = ""
 firebase.firestore().collection("case-studies").doc(id).get().then(function (doc) {
-    console.log("data",doc)
-    console.log("data",doc.data())
+    console.log("data", doc)
+    console.log("data", doc.data())
     lastDocument = doc.data().timestamp
     var heading = doc.data().heading
     var subHeading = doc.data().subHeading
@@ -55,12 +55,12 @@ firebase.firestore().collection("case-studies").doc(id).get().then(function (doc
 
 function getRecentPosts() {
     console.log(lastDocument)
-firebase.firestore().collection("case-studies").where("timestamp","!=",lastDocument).limit(2).onSnapshot(function (snapshot) {
-    document.getElementById("case-studies").innerHTML = ""
-    document.getElementById("mob-case-studies").innerHTML = ""
-    snapshot.forEach((element, index) => {
-        console.log("recent data",element.data())
-        document.getElementById("case-studies").innerHTML += `
+    firebase.firestore().collection("case-studies").where("timestamp", "!=", lastDocument).limit(2).onSnapshot(function (snapshot) {
+        document.getElementById("case-studies").innerHTML = ""
+        document.getElementById("mob-case-studies").innerHTML = ""
+        snapshot.forEach((element, index) => {
+            console.log("recent data", element.data())
+            document.getElementById("case-studies").innerHTML += `
         <figure class="effect-apollo px-auto" data-aos="fade-up" data-aos-duration="2000" style="background-image:url(${element.data().imgUrl});background-position:center;background-size:cover;">
             <figcaption>
                 <h2>${element.data().heading}</h2>
@@ -70,7 +70,7 @@ firebase.firestore().collection("case-studies").where("timestamp","!=",lastDocum
         </figure>
         `
 
-        document.getElementById("mob-case-studies").innerHTML += `
+            document.getElementById("mob-case-studies").innerHTML += `
         <figure class="effect-apollo px-auto" data-aos="fade-up" data-aos-duration="2000" style="background-image:url(${element.data().imgUrl});background-position:center;background-size:cover;">
             <figcaption>
                 <h2>${element.data().heading}</h2>
@@ -79,6 +79,11 @@ firebase.firestore().collection("case-studies").where("timestamp","!=",lastDocum
             </figcaption>			
         </figure>
         `
-    });
-})
+        });
+    })
+    hideLoader()
+}
+
+function hideLoader() {
+    document.getElementById("loader").style.display = "none";
 }

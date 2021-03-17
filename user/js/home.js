@@ -171,6 +171,7 @@ function showJournals() {
                 }
             ]
         });
+        hideLoader()
     })
 
 }
@@ -200,4 +201,8 @@ function revealVideo(div,video_id) {
     var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
     document.getElementById(video_id).src = cleaned;
     document.getElementById(div).style.display = 'none';
+  }
+
+  function hideLoader() {
+      document.getElementById("loader").style.display = "none";
   }

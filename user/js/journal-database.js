@@ -10,7 +10,9 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").onSnapsho
                 </figcaption>			
             </figure>
                 `
+        hideLoader()
     });
+
     // snapshot.forEach(element => {
     //     document.getElementById("journal").innerHTML += `
     //         <figure class="effect-sadie" data-aos="fade-up" data-aos-duration="2000" style="max-width:45%;min-height:450px;max-height:450px;background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${element.data().imgUrl});background-size:cover;background-position:center"
@@ -55,4 +57,8 @@ firebase.firestore().collection("journals").orderBy("priority", "asc").onSnapsho
 
 function goToSingleJournal(id) {
     window.location.href = "single-journal.html?id=" + id
+}
+
+function hideLoader() {
+    document.getElementById("loader").style.display = "none";
 }

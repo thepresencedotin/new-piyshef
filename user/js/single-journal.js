@@ -65,6 +65,7 @@ firebase.firestore().collection("journals").doc(id).get().then(function (doc) {
     </div>
     `
     this.getRecentPosts()
+    hideLoader()
 })
 
 function whatsappShare(text) {
@@ -113,4 +114,8 @@ function getRecentPosts() {
 
 function goToSingleJournal(id) {
     window.location.href = "single-journal.html?id=" + id
+}
+
+function hideLoader() {
+    document.getElementById("loader").style.display = "none";
 }
