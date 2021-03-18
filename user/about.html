@@ -82,7 +82,7 @@
 
   <!-- Loader Start -->
   <div id="loader" class="loader_container">
-    <img src="assets/images/icon.png" width="20%" class="loader" alt="">
+    <!-- <img src="assets/images/icon.png" width="20%" class="loader" alt=""> -->
   </div>
   <!-- Loader End -->
 
@@ -169,7 +169,7 @@
         <div class="d-none d-md-block d-lg-block">
           <h4 style="margin-top:-90px;font-weight: 400;font-size: 2rem" class="text-left text-md-center">We are Piyshef, a company that loves to Collaborate, create and execute.</h4>
           <div class="col-md-12 p-0">
-            <p class="text-muted text-left text-md-center" style="line-height: 45px;font-weight: 400;font-size: 30px!important">Piyshef is an all-in-one platform for small businesses to flourish. We empower individuals to grow their businesses
+            <p class="text-muted text-left text-md-center" style="line-height: 45px;font-weight: 400;font-size: 30px!important" data-aos="fade-up" data-aos-duration="3000">Piyshef is an all-in-one platform for small businesses to flourish. We empower individuals to grow their businesses
               through our multidimensional approach. How, you may ask? You tell us your story. Our team of highly-skilled
               professionals will not just brand your product/service- it will create an experience for your users, making
               you the best out there. We believe in less talk and more action.
@@ -178,7 +178,7 @@
         </div>
 
         <div class="col-md-12 text-left mx-auto mb-5 text-md-center d-block d-md-none d-lg-none">
-          <p class="text-muted" style="margin-top: -100px;font-weight: 400;font-size:30px!important;">" We are Piyshef, a company that loves to Collaborate, create and execute. We believe in less talk and more action.
+          <p class="text-muted" style="margin-top: -100px;font-weight: 400;font-size:30px!important;" data-aos="fade-up" data-aos-duration="3000">" We are Piyshef, a company that loves to Collaborate, create and execute. We believe in less talk and more action.
             Let's get to it, shall we? "</p>
         </div>
       </div>
@@ -427,7 +427,8 @@
   <!-- Loader Js Start -->
   <script>
     setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
+      $('#loader').fadeOut()
+      // document.getElementById("loader").style.display = "none";
     }, 1000);
   </script>
   <!-- Loader Js End -->

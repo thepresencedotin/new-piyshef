@@ -22,6 +22,7 @@ var animate = bodymovin.loadAnimation({
     path: 'assets/json/logo.json'
 })
 
+
 var figure = $("#logo__videos").hover(hoverVideo, hideVideo);
 
 function hoverVideo(e) {

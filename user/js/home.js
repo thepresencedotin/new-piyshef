@@ -203,7 +203,8 @@ function revealVideo(div,video_id) {
   }
 
   function hideLoader() {
-      document.getElementById("loader").style.display = "none";
+        $('#loader').fadeOut()
+    //   document.getElementById("loader").style.display = "none";
   }
 
   function goToSingleJournal(id) {

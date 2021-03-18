@@ -74,9 +74,7 @@ $(window).scroll(function () {
 })
 
 function hideLogoOnFooter() {
-  console.log("fn run")
   if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-    console.log("fn if")
     "use strict";
     document.getElementById("logo2").style.display = "none";
     document.getElementById("logo2").className = "d-none d-md-none d-lg-none";

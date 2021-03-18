@@ -48,7 +48,7 @@
 <body id="body">
   <!-- Loader Start -->
   <div id="loader" class="loader_container">
-    <img src="assets/images/icon.png" width="20%" class="loader" alt="">
+    <!-- <img src="assets/images/icon.png" width="20%" class="loader" alt=""> -->
   </div>
   <!-- Loader End -->
 
@@ -142,7 +142,7 @@
           </p>
         </div> -->
         <div class="col-md-12 text-left mx-auto mb-5 text-md-center">
-          <p class="text-muted" style="margin-top: -50px;font-weight: 400;font-size:30px!important;">" We believe in building the best for your brand. Our customer relations are the base of our organization.Let's
+          <p class="text-muted" style="margin-top: -50px;font-weight: 400;font-size:30px!important;" data-aos="fade-up" data-aos-duration="3000">" We believe in building the best for your brand. Our customer relations are the base of our organization.Let's
             create some amazing work together! Fill this form and we'll get right back to you."</p>
         </div>
         <div class="col-md-10 mx-auto my-5">
@@ -405,7 +405,8 @@
   <script src="js/lottie-images.js"></script>
   <script>
     setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
+      $('#loader').fadeOut()
+      // document.getElementById("loader").style.display = "none";
     }, 1000);
   </script>
 </body>

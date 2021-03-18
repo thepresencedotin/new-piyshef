@@ -17,5 +17,6 @@ firebase.firestore().collection("case-studies").orderBy("priority", "asc").onSna
 })
 
 function hideLoader() {
-    document.getElementById("loader").style.display = "none";
+    $('#loader').fadeOut()
+    // document.getElementById("loader").style.display = "none";
 }

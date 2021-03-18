@@ -85,5 +85,6 @@ function getRecentPosts() {
 }
 
 function hideLoader() {
-    document.getElementById("loader").style.display = "none";
+    $('#loader').fadeOut()
+    // document.getElementById("loader").style.display = "none";
 }

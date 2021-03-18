@@ -200,14 +200,16 @@
         z-index: 99999;
         opacity: 1;
         overflow: hidden;
-        position: fixed
+        position: fixed;
+        transition: ease
     }
 
     .loader {
         position: absolute;
         left: 40%;
         top: 40%;
-        animation: spin 2s linear infinite
+        width: 15%;
+        /* animation: spin 2s linear infinite */
     }
 }
 
