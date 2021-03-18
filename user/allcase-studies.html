@@ -32,23 +32,6 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script data-require="moment.js@2.10.2" data-semver="2.10.2" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-  <!-- <script>
-        (async () => {
-            const compiled = (await Promise.all(
-                [...document.querySelectorAll("link")]
-                    .filter(l => l.rel === 'stylesheet/scss')
-                    .map(async l => {
-                        url = l.href;
-                        const code = await (await fetch(url)).text();
-                        const basename = url.substring(url.lastIndexOf("/") + 1);
-                        Sass.writeFile(basename, code);
-                        return Sass.compile(`@import "${basename}"; `);
-                    })
-            )).join("\n");
-            document.head.innerHTML += `<style>${compiled}</style>`;
-            console.log(compiled);
-        })();
-    </script> -->
 </head>
 <style>
   img {
@@ -154,13 +137,6 @@
           <br> technology with ideas that can revolutionize products/services. Here are some of our best works "</p>
       </div>
     </div>
-    <!-- <div class="row my-5" style="overflow: hidden;" id="case-studies-first-section">
-            
-        </div>
-
-        <div class="row my-5" style="overflow: hidden;" id="case-studies-second-section">
-            
-        </div> -->
   </div>
   <div class="container-fluid" style="position: relative;">
     <div class="row" style="margin-top: 150px;">
@@ -189,7 +165,7 @@
             </div>
             <div class="text-center d-block d-md-none d-lg-none">
               <a href="index.html">
-                <img src="assets/images/logo.png" class="pt-4" width="150px" alt="">
+                <img src="assets/images/logo.png" class="pt-4" style="padding-bottom: 1.8rem;" width="150px" alt="">
               </a>
             </div>
           </div>
