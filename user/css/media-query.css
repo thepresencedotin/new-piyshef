@@ -411,7 +411,7 @@
         position: absolute;
         left: 40%;
         top: 25%;
-        animation: spin 2s linear infinite
+        /* animation: spin 2s linear infinite */
     }
 }
 
@@ -605,7 +605,7 @@
         position: absolute;
         left: 40%;
         top: 25%;
-        animation: spin 2s linear infinite
+        /* animation: spin 2s linear infinite */
     }
 }
 
