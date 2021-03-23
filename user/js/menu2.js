@@ -63,25 +63,26 @@ $(window).scroll(function () {
     // console.log("if")
     document.getElementById("logo").classList.remove("d-none");
     // console.log("remove class")
-    // $('#logo').fadeIn();
-    document.getElementById("logo").style.display = "block";
-    document.getElementById("logo").className = "d-block d-md-none d-lg-none";
+    $('#logo').fadeIn();
+    // document.getElementById("logo").style.display = "block";
+    // document.getElementById("logo").className = "d-block d-md-none d-lg-none";
   }
   else {
-    // $('#logo').fadeOut();
-    document.getElementById("logo").className = "d-none d-md-none d-lg-none";
+    $('#logo').fadeOut();
+    // document.getElementById("logo").className = "d-none d-md-none d-lg-none";
   }
 })
 
 function hideLogoOnFooter() {
-  if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+  if ($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
     "use strict";
-    document.getElementById("logo2").style.display = "none";
-    document.getElementById("logo2").className = "d-none d-md-none d-lg-none";
+    $('#logo2').fadeOut();    
+    // document.getElementById("logo2").style.display = "none";
+    // document.getElementById("logo2").className = "d-none d-md-none d-lg-none";
   }
   else {
-    // $('#logo').fadeIn();
-    document.getElementById("logo2").style.display = "block";
-    document.getElementById("logo2").className = "d-block d-md-none d-lg-none";
+    $('#logo2').fadeIn();
+    // document.getElementById("logo2").style.display = "block";
+    // document.getElementById("logo2").className = "d-block d-md-none d-lg-none";
   }
 }

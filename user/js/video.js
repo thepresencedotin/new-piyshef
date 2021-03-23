@@ -33,16 +33,16 @@
 // var player;
 
 
-// function showMutedVideo() {
-//     let video = document.getElementById("modal-video")
-//     video.pause()
-//     document.getElementById("mutedVideo").style.opacity = 1
-//     player.pauseVideo();
-// }
+function showMutedVideo() {
+    let video = document.getElementById("modal-video")
+    video.pause()
+    document.getElementById("mutedVideo").style.opacity = 1
+    player.pauseVideo();
+}
 
-// function modalVideoPlay() {
-//     var playButton = document.getElementById("play-button");
-//     document.getElementById("mutedVideo").style.opacity = 0
-//     let video = document.getElementById("modal-video")
-//     video.play()
-// }
+function modalVideoPlay() {
+    var playButton = document.getElementById("play-button");
+    document.getElementById("mutedVideo").style.opacity = 0
+    let video = document.getElementById("modal-video")
+    video.play()
+}
