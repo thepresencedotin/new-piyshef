@@ -30,8 +30,14 @@ function hoverVideo(e) {
 }
 
 function hideVideo(e) {
-    setTimeout(animate.play() , 3000);
+    setTimeout(animate.play(), 3000);
 }
 
+$(window).scroll(function () {
+    const scroll = window.scrollY;
+    if (scroll <= 200) {
+        animate.goToAndPlay(0);
+    }
+})
 
 // animate.setSpeed(0.5);
