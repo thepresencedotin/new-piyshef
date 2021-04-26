@@ -1,0 +1,667 @@
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*-------------------Mobile---------------------------------*/
+
+@media (max-width:764px) {
+    .mt-sm-5 {
+        margin-top: 3rem !important;
+    }
+
+    .video__banner {
+        background-image: url(assets/images/logo.png);
+        background-size: 150px;
+        height: 58px;
+        background-repeat: no-repeat;
+    }
+
+    .logo__video {
+        width: 80% !important;
+        /* position: fixed; */
+        z-index: 99 !important;
+        left: 0;
+        top: -20px
+            /* height: 100px!important; */
+    }
+
+    .header-padding {
+        /* padding-bottom: 65px; */
+    }
+
+    .humburg {
+        position: fixed !important;
+        right: 0 !important;
+        font-size: xx-large;
+        color: #0855A0 !important;
+        cursor: pointer !important;
+        margin-right: 40px !important;
+        margin-top: -40px !important;
+    }
+
+    .home-humburg {
+        position: fixed;
+        right: 0;
+        font-size: xx-large;
+        color: #0855A0 !important;
+        cursor: pointer;
+        margin-right: 40px !important;
+        margin-top: -40px !important;
+    }
+
+    .about-humburg {
+        position: fixed;
+        right: 0;
+        font-size: xx-large;
+        color: #0855A0 !important;
+        cursor: pointer;
+        margin-right: 18px !important;
+        margin-top: -40px !important;
+    }
+
+    #video {
+        margin-top: 10px;
+        width: 100% !important;
+    }
+
+    /* Card text Animation Start */
+    .bottom-container,
+    .top-container {
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        font-size: 30px;
+    }
+
+    .bottom-container {
+        color: #232323;
+    }
+
+    .top-container {
+        background-color: #000;
+        color: #fff;
+        clip-path: circle(13% at 85% 50%);
+        animation: circleMove 90s ease-in-out infinite;
+    }
+
+    @keyframes circleMove {
+
+        0%,
+        100% {
+            clip-path: circle(10% at 65% 50%);
+        }
+
+        50% {
+            clip-path: circle(10% at 35% 50%);
+        }
+    }
+
+    .formula-text {
+        font-size: 50px !important;
+        font-family: 'Playfair Display' !important;
+        font-weight: 800 !important;
+        opacity: 0.1 !important;
+        color: #212529 !important;
+        margin-top: -35px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .tagline_container {
+        background-color: #fff !important;
+        position: relative;
+        max-width: 100%;
+        min-height: 300px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        /* margin-bottom: 70px; */
+    }
+
+    .tagLine {
+        font-size: 30px !important;
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        padding-top: 80px;
+    }
+
+    .formula {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        font-size: 30px !important;
+        color: #212529;
+    }
+
+    .case-studies {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 50px;
+        color: #212529;
+    }
+
+    .journals {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: #212529;
+    }
+
+    .journal-margin {
+        margin-top: 800px;
+    }
+
+    .contact {
+        color: #212529;
+        margin-top: -46px;
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 50px
+    }
+
+    .contact-text2 {
+        font: 300 50px 'Oswald', sans-serif;
+    }
+
+    .contact-text3 {
+        font-size: 25px;
+        margin-top: -35px !important
+    }
+
+    .about-service-margin {
+        margin-top: 250px;
+    }
+
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+        left: 45%;
+    }
+
+    .loader_container {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 99999;
+        opacity: 1;
+        overflow: hidden;
+        position: fixed;
+        transition: ease
+    }
+
+    .loader {
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        width: 15%;
+        /* animation: spin 2s linear infinite */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------Laptop------------------------------*/
+
+@media (min-width: 1024px) {
+    .mt-sm-5 {
+        margin-top: 0rem !important;
+    }
+
+    .text-md-center {
+        text-align: center;
+    }
+
+    .video__banner {
+        background-image: url(assets/images/logo.png);
+        background-size: 240px;
+        height: 58px;
+        background-repeat: no-repeat;
+    }
+
+    .logo__video {
+        width: 450px !important;
+        /* position: fixed; */
+        z-index: 99 !important;
+        /* left: 0; */
+        /* top: -20px; */
+        margin-top: -50px;
+    }
+
+    .header-menu {
+        position: absolute;
+        right: 0;
+        top: 43px;
+    }
+
+    .header-padding {
+        /* padding-bottom: 65px; */
+    }
+
+    .humburg {
+        position: fixed !important;
+        right: 0 !important;
+        font-size: xx-large !important;
+        color: #0855A0 !important;
+        cursor: pointer !important;
+        margin-right: 70px !important
+    }
+
+    .home-humburg {
+        position: fixed;
+        right: 0;
+        font-size: xx-large;
+        color: #0855A0 !important;
+        cursor: pointer;
+        margin-right: 70px !important;
+        z-index: 111111 !important;
+    }
+
+    #video {
+        margin-top: -150px;
+        width: 100% !important;
+    }
+
+    /* Card text Animation Start */
+    .bottom-container,
+    .top-container {
+        width: 35vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        font-size: 70px;
+    }
+
+    .bottom-container {
+        color: #232323;
+    }
+
+    .top-container {
+        background-color: #000;
+        color: #fff;
+        clip-path: circle(13% at 85% 50%);
+        animation: circleMove 90s ease-in-out infinite;
+    }
+
+    @keyframes circleMove {
+
+        0%,
+        100% {
+            clip-path: circle(10% at 75% 50%);
+        }
+
+        50% {
+            clip-path: circle(10% at 25% 50%);
+        }
+    }
+
+    .formula-text {
+        font-size: 150px !important;
+        font-family: 'Playfair Display' !important;
+        font-weight: 800 !important;
+        opacity: 0.1 !important;
+        color: #212529 !important;
+        margin-top: -35px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .tagline_container {
+        background-color: #fff !important;
+        position: relative;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
+
+    .tagLine {
+        font-size: 105px !important;
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        padding-top: 30px;
+    }
+
+    .formula {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        color: #212529;
+    }
+
+    .case-studies {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 100px;
+        color: #212529;
+    }
+
+    .journals {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        color: #212529;
+        font-size: 100px;
+    }
+
+    .contact {
+        color: #212529;
+        margin-top: -93px;
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 100px
+    }
+
+    .contact-text2 {
+        font: 300 60px 'Oswald', sans-serif;
+    }
+
+    .contact-text3 {
+        font-size: 25px;
+        margin-top: -35px !important
+    }
+
+    .about-service-margin {
+        margin-top: 400px;
+    }
+
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+        left: 50%;
+    }
+
+    .loader_container {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 99999;
+        opacity: 1;
+        overflow: hidden;
+        position: fixed
+    }
+
+    .loader {
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        /* animation: spin 2s linear infinite */
+    }
+}
+
+
+
+
+
+
+
+/*---------------------ipad-------------------------------*/
+
+@media (min-width:765px) and (max-width:1023px) {
+    .mt-sm-5 {
+        margin-top: 0rem !important;
+    }
+
+    .text-md-center {
+        text-align: center;
+    }
+
+    .video__banner {
+        background-image: url(assets/images/logo.png);
+        background-size: 240px;
+        height: 58px;
+        background-repeat: no-repeat;
+    }
+
+    .logo__video {
+        width: 450px !important;
+        /* position: fixed; */
+        z-index: 99 !important;
+        /* left: 0; */
+        /* top: -20px; */
+        margin-top: -50px;
+    }
+
+    .header-menu {
+        position: absolute;
+        right: 0;
+        top: 43px;
+    }
+
+    .humburg {
+        position: fixed;
+        right: 0;
+        font-size: xx-large;
+        color: #0855A0 !important;
+        cursor: pointer;
+        margin-right: 40px !important;
+    }
+
+    .header-padding {
+        /* padding-bottom: 65px; */
+    }
+
+    /* .header-menu {
+        position: absolute;
+        right:0;
+        top: 43px;
+    } */
+    #video {
+        margin-top: -200px;
+        width: 100% !important;
+    }
+
+    /* Card text Animation Start */
+    .bottom-container,
+    .top-container {
+        width: 35vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        font-size: 70px;
+    }
+
+    .bottom-container {
+        color: #232323;
+    }
+
+    .top-container {
+        background-color: #000;
+        color: #fff;
+        clip-path: circle(13% at 85% 50%);
+        animation: circleMove 90s ease-in-out infinite;
+    }
+
+    @keyframes circleMove {
+
+        0%,
+        100% {
+            clip-path: circle(10% at 75% 50%);
+        }
+
+        50% {
+            clip-path: circle(10% at 25% 50%);
+        }
+    }
+
+    .formula-text {
+        font-size: 150px !important;
+        font-family: 'Playfair Display' !important;
+        font-weight: 800 !important;
+        opacity: 0.1 !important;
+        color: #212529 !important;
+        margin-top: -35px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .tagline_container {
+        background-color: #fff !important;
+        position: relative;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden
+    }
+
+    .tagLine {
+        font-size: 90px !important;
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        padding-top: 30px;
+    }
+
+    .formula {
+        font-family: 'Playfair Display';
+        font-weight: 600;
+        color: #212529;
+    }
+
+    .case-studies {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 90px;
+        margin-top: 25px;
+        color: #212529;
+    }
+
+    .journals {
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        color: #212529;
+        font-size: 90px;
+    }
+
+    .contact {
+        color: #212529;
+        margin-top: -98px;
+        font-family: 'Playfair Display';
+        font-weight: 800;
+        font-size: 90px
+    }
+
+    .contact-text2 {
+        font: 300 60px 'Oswald', sans-serif;
+    }
+
+    .contact-text3 {
+        font-size: 25px;
+        margin-top: -35px !important
+    }
+
+    .about-service-margin {
+        margin-top: 400px;
+    }
+
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+        left: 50%;
+    }
+
+    .loader_container {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 99999;
+        opacity: 1;
+        overflow: hidden;
+        position: fixed
+    }
+
+    .loader {
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        /* animation: spin 2s linear infinite */
+    }
+}
+
+
+
+
+
+
+/* Global Css */
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #000;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}

@@ -1,5 +1,5 @@
 function goToHomePage() {
-    window.location.href = "index.html"
+    window.location.href = "/"
 }
 
 // var vid = document.getElementById("logo__video");

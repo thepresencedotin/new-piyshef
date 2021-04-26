@@ -1,0 +1,300 @@
+/* Mobile */
+
+@media (max-width:764px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: -150px;
+        top: 35%
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 70%!important;
+        top: 0;
+        left: -110px
+    }
+    #mutedVideo {
+        margin-top: -110px;
+    }
+    .video2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s ease;
+        width: 100%;
+    }
+    .video2:hover {
+        padding: 15px;
+    }
+    #play-button {
+        position: absolute;
+        left: 45%;
+        top: 10%;
+        width: 38px;        
+    }
+    .ParallaxVideo {
+        /* height: 140px; */
+        /* padding-bottom: 50px; */
+        padding-top: 40px;
+        padding-bottom: 45px
+    }
+    .ParallaxVideo video {
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -9999;
+    }
+    .ParallaxVideo h3 {
+        color: #212529;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 30%;
+        height: 35vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-top: 50px
+    }
+    .journal-left-side-shadow {
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 35vh;
+        z-index: 1;
+        position: absolute
+    }
+    .VideoHead-reel-wrapper {
+        position: relative;
+        height: 0;
+        padding-top: 56.59259259%;
+        margin-top: 50px
+    }
+    
+    .VideoHead-reel-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .VideoHead-reel-inner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        font-family: 'object-fit: cover; object-position: center';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dasktop */
+
+@media (min-width: 1024px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: 0
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 22%;
+        top: 0;
+    }
+    .video2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s ease;
+        width: 100px;
+    }
+    .video2:hover {
+        padding: 15px;
+    }
+    #play-button {
+        position: absolute;
+        left: 45%;
+        top: 45%;
+    }
+    .ParallaxVideo {
+        height: 170px;
+        /* padding-bottom: 50px; */
+        padding-top: 50px;
+    }
+    .ParallaxVideo video {
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -9999;
+    }
+    .ParallaxVideo h3 {
+        color: #212529;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .journal-left-side-shadow {
+        background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute
+    }
+    .VideoHead-reel-wrapper {
+        position: relative;
+        height: 0;
+        padding-top: 56.59259259%;
+    }
+    
+    .VideoHead-reel-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .VideoHead-reel-inner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        font-family: 'object-fit: cover; object-position: center';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ipad */
+
+@media (min-width:765px) and (max-width:1023px) {
+    .tagline-green-cloud {
+        position: absolute;
+        right: 0
+    }
+    .tagline-blue-cloud {
+        position: absolute;
+        width: 22%;
+        top: 0;
+    }
+    .video2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s ease;
+        width: 100px;
+    }
+    .video2:hover {
+        padding: 15px;
+    }
+    #play-button {
+        position: absolute;
+        left: 45%;
+        top: 45%;
+    }
+    .ParallaxVideo {
+        height: 170px;
+        /* padding-bottom: 50px; */
+        padding-top: 50px;
+    }
+    .ParallaxVideo video {
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -9999;
+    }
+    .ParallaxVideo h3 {
+        color: #212529;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .journal-right-side-shadow {
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(251, 251, 253, 1));
+        width: 35%;
+        height: 60vh;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .VideoHead-reel-wrapper {
+        position: relative;
+        height: 0;
+        padding-top: 56.59259259%;
+    }
+    
+    .VideoHead-reel-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .VideoHead-reel-inner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        font-family: 'object-fit: cover; object-position: center';
+    }
+}
+
+/* Global */
