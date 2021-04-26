@@ -12,12 +12,8 @@ function showCaseStudies() {
                 <img src="${element.data().imgUrl}" />
             </div>
             `
-            // document.getElementById("text-part").innerHTML += `
-            //     <div class="item my-5">${element.data().heading}</div>
-            // `
         });
         showDataInHTML()
-
     })
 }
 
@@ -49,7 +45,7 @@ function showDataInHTML() {
         dots: true,
         autoplay: true,
         autoplaySpeed: 2000,
-        pauseOnHover:false,
+        pauseOnHover: false,
         speed: 1000,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
     }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -174,7 +170,7 @@ function showJournals() {
     })
 
 }
-        
+
 
 
 showJournals()
@@ -188,25 +184,24 @@ function grabbing() {
 
 
 // Function to reveal lightbox and adding YouTube autoplay
-function revealVideo(div,video_id) {
+function revealVideo(div, video_id) {
     var video = document.getElementById(video_id).src;
-    document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
+    document.getElementById(video_id).src = video + '&autoplay=1'; // adding autoplay to the URL
     document.getElementById(div).style.display = 'block';
-  }
-  
-  // Hiding the lightbox and removing YouTube autoplay
-  function hideVideo(div,video_id) {
+}
+
+// Hiding the lightbox and removing YouTube autoplay
+function hideVideo(div, video_id) {
     var video = document.getElementById(video_id).src;
-    var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
+    var cleaned = video.replace('&autoplay=1', ''); // removing autoplay form url
     document.getElementById(video_id).src = cleaned;
     document.getElementById(div).style.display = 'none';
-  }
+}
 
-  function hideLoader() {
-        $('#loader').fadeOut()
-    //   document.getElementById("loader").style.display = "none";
-  }
+function hideLoader() {
+    $('#loader').fadeOut()
+}
 
-  function goToSingleJournal(id) {
+function goToSingleJournal(id) {
     window.location.href = "single-journal.html?id=" + id
 }
